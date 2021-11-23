@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Метелица](https://up.htmlacademy.ru/adaptive/24/user/1863297).
-* Наставник: [Анастасия Ничипорчук] (https://htmlacademy.ru/profile/id612797).
+* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797).
 
 ---
 
