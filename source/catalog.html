@@ -7,7 +7,7 @@
   <body class="page__body">
     <!--header start-->
     <header class="page-header">
-      <a href="#" class="page-header__logo">
+      <a href="./index.html" class="page-header__logo">
         <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
       </a>
       <nav class="main-nav">
@@ -17,12 +17,12 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="#">
+              <a href="./index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="./catalog.html">
+              <a>
                 фото и видео
               </a>
             </li>
@@ -42,7 +42,99 @@
     </header>
     <!--header end-->
     <!--main start-->
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
+        <section class="intro-catalog" style="background-color: rgb(0, 0, 0);">   <!--стиль что бы было лучше видно разметку-->
+          <img class="intro-catalog__header" src="./img/catalog/SEDONA.svg" width="282" height="214" alt="Заголовок">
+          <div class="intro-catalog-catalog__divider-top">
+            <svg width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
+              <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
+            </svg>
+          </div>
+        </section>
+        <div class="intro-catalog__info">   <!--стиль что бы было лучше видно разметку-->
+          <h2 class="intro-catalog__info-header">
+            Фото и видео
+          </h2>
+          <p class="intro-catalog__info-text">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+          </p>
+        </div>
+        <section class="catalog">
+          <div class="catalog__wrapper">
+            <ul class="catalog__lits">
+              <li class="catalog__item">
+                <div class="item__card">
+                  <img class="item__image" src="./img/catalog/photo-1-mobile.jpg" alt="Народные просторы">
+                  <h3 class="item__header">Народные просторы</h3>
+                  <p class="item__author">Автор фото: Борис</p>
+                  <div class="item__counter">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <p class="counter__number">1350</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="item__card">
+                  <img class="item__image" src="./img/catalog/photo-2-mobile.jpg" alt="Местная растительность">
+                  <h3 class="item__header">Местная растительность</h3>
+                  <p class="item__author">Автор фото: Сергей</p>
+                  <div class="item__counter">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <p class="counter__number">143</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="item__card">
+                  <img class="item__image" src="./img/catalog/photo-3-mobile.jpg" alt="Дорога на север">
+                  <h3 class="item__header">Дорога на север</h3>
+                  <p class="item__author">Автор фото: Петр</p>
+                  <div class="item__counter">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <p class="counter__number">96</p>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="item__card">
+                  <img class="item__image" src="./img/catalog/photo-4-mobile.jpg" alt="Мост дьявола">
+                  <h3 class="item__header">Мост дьявола</h3>
+                  <p class="item__author">Автор фото: Антон</p>
+                  <div class="item__counter">
+                    <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <p class="counter__number">254</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="video">
+          <div class="video__wrapper">
+            <div class="video__info">
+              <h2 class="info__header">Все еще сомневаетесь?</h2>
+              <p class="info__text">
+                Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+              </p>
+            </div>
+            <div class="video__player">
 
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <!--main end-->
     <!--footer start-->
     <footer class="page-footer">
