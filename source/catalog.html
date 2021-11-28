@@ -16,12 +16,12 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item ">
               <a href="./index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a>
                 фото и видео
               </a>
@@ -47,7 +47,7 @@
         <h1 class="visually-hidden">Фото и видео</h1>
         <section class="intro-catalog" style="background-color: rgb(0, 0, 0);">   <!--стиль что бы было лучше видно разметку-->
           <img class="intro-catalog__header" src="./img/catalog/SEDONA.svg" width="282" height="214" alt="Заголовок">
-          <div class="intro-catalog-catalog__divider-top">
+          <div class="intro-catalog__divider-top">
             <svg width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
               <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
@@ -65,9 +65,11 @@
         <section class="catalog">
           <div class="catalog__wrapper">
             <ul class="catalog__lits">
-              <li class="catalog__item">
+              <li class="catalog__item item">
                 <div class="item__card">
-                  <img class="item__image" src="./img/catalog/photo-1-mobile.jpg" alt="Народные просторы">
+                  <a href="#" class="item__link">
+                    <img class="item__image" src="./img/catalog/photo-1-mobile.jpg" alt="Народные просторы">
+                  </a>
                   <h3 class="item__header">Народные просторы</h3>
                   <p class="item__author">Автор фото: Борис</p>
                   <div class="item__counter">
@@ -78,9 +80,11 @@
                   </div>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item item">
                 <div class="item__card">
-                  <img class="item__image" src="./img/catalog/photo-2-mobile.jpg" alt="Местная растительность">
+                  <a href="#" class="item__link">
+                    <img class="item__image" src="./img/catalog/photo-2-mobile.jpg" alt="Местная растительность">
+                  </a>
                   <h3 class="item__header">Местная растительность</h3>
                   <p class="item__author">Автор фото: Сергей</p>
                   <div class="item__counter">
@@ -91,9 +95,11 @@
                   </div>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item item">
                 <div class="item__card">
-                  <img class="item__image" src="./img/catalog/photo-3-mobile.jpg" alt="Дорога на север">
+                  <a href="#" class="item__link">
+                    <img class="item__image" src="./img/catalog/photo-3-mobile.jpg" alt="Дорога на север">
+                  </a>
                   <h3 class="item__header">Дорога на север</h3>
                   <p class="item__author">Автор фото: Петр</p>
                   <div class="item__counter">
@@ -104,9 +110,11 @@
                   </div>
                 </div>
               </li>
-              <li class="catalog__item">
+              <li class="catalog__item item">
                 <div class="item__card">
-                  <img class="item__image" src="./img/catalog/photo-4-mobile.jpg" alt="Мост дьявола">
+                  <a href="#" class="item__link">
+                    <img class="item__image" src="./img/catalog/photo-4-mobile.jpg" alt="Мост дьявола">
+                  </a>
                   <h3 class="item__header">Мост дьявола</h3>
                   <p class="item__author">Автор фото: Антон</p>
                   <div class="item__counter">
@@ -129,7 +137,22 @@
               </p>
             </div>
             <div class="video__player">
-
+              <video class="player" controls width="400" height="300">
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.webm" type="video/webm">
+                <source src="video.ogv" type="video/ogg">
+                <object data="video.swf" type="application/x-shockwave-flash">
+                  <param name="movie" value="video.swf">
+                </object>
+              </video>
+              <div class="player__controls">
+                <div class="player__slider"></div>
+                <div class="player__button button-video">
+                  <button class="button-video__replay" type="button"></button>
+                  <button class="button-video__cedits" type="button"></button>
+                  <button class="button-video__fullscrin" type="button"></button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -143,9 +166,9 @@
           <a href="#" class="hashtag__link">#visitSEDONA</a>
         </div>
         <div class="page-footer__social social">
-          <a href="" class="social__link social__link—twitter"></a>
-          <a href="" class="social__link social__link-facebook"></a>
-          <a href="" class="social__link social__link-youtube"></a>
+          <a href="" class="social__link social__link--twitter"></a>
+          <a href="" class="social__link social__link--facebook"></a>
+          <a href="" class="social__link social__link--youtube"></a>
         </div>
         <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
