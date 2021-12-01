@@ -3,49 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <!--header start-->
     <header class="page-header">
-      <a href="./index.html" class="page-header__logo">
-        <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item ">
-              <a href="./index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>
-                фото и видео
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="./form.html">
-                форма отзыва
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/">
-                html academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link" href="./index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link">
+                  фото и видео
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="./form.html">
+                  форма отзыва
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">
+                  html academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!--header end-->
     <!--main start-->
     <main class="page-main">
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">Фото и видео</h1>
-        <section class="intro-catalog" style="background-color: rgb(0, 0, 0);">   <!--стиль что бы было лучше видно разметку-->
+        <section class="intro-catalog">
           <img class="intro-catalog__header" src="./img/catalog/SEDONA.svg" width="282" height="214" alt="Заголовок">
           <div class="intro-catalog__divider-top">
             <svg width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +57,7 @@
             </svg>
           </div>
         </section>
-        <div class="intro-catalog__info">   <!--стиль что бы было лучше видно разметку-->
+        <div class="intro-catalog__info">
           <h2 class="intro-catalog__info-header">
             Фото и видео
           </h2>
@@ -64,7 +67,7 @@
         </div>
         <section class="catalog">
           <div class="catalog__wrapper">
-            <ul class="catalog__lits">
+            <ul class="catalog__list">
               <li class="catalog__item item">
                 <div class="item__card">
                   <a href="#" class="item__link">
@@ -131,26 +134,19 @@
         <section class="video">
           <div class="video__wrapper">
             <div class="video__info">
-              <h2 class="info__header">Все еще сомневаетесь?</h2>
-              <p class="info__text">
+              <h2 class="video__info--header">Все еще сомневаетесь?</h2>
+              <p class="video__info--text">
                 Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
               </p>
             </div>
-            <div class="video__player">
-              <video class="player" controls width="400" height="300">
-                <source src="video.mp4" type="video/mp4">
-                <source src="video.webm" type="video/webm">
-                <source src="video.ogv" type="video/ogg">
-                <object data="video.swf" type="application/x-shockwave-flash">
-                  <param name="movie" value="video.swf">
-                </object>
-              </video>
+            <div class="video__player player">
+              <img src="./img/catalog/video-mobile.jpg" alt="Картинка видео" class="player__image">
               <div class="player__controls">
                 <div class="player__slider"></div>
                 <div class="player__button button-video">
                   <button class="button-video__replay" type="button"></button>
                   <button class="button-video__cedits" type="button"></button>
-                  <button class="button-video__fullscrin" type="button"></button>
+                  <button class="button-video__fullscreen" type="button"></button>
                 </div>
               </div>
             </div>
