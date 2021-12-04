@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <!--header start-->
@@ -18,22 +19,22 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
-                <a>
+                <a class="main-nav__link">
                   Главная
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="./catalog.html">
+                <a class="main-nav__link" href="./catalog.html">
                   фото и видео
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="./form.html">
+                <a class="main-nav__link" href="./form.html">
                   форма отзыва
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="https://htmlacademy.ru/">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">
                   html academy
                 </a>
               </li>
@@ -47,7 +48,7 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
-        <section class="intro" style="background-color: rgb(0, 0, 0);">   <!--стиль что бы было лучше видно разметку-->
+        <section class="intro">
           <img class="intro__header" src="./img/text-index.svg" width="282" height="214" alt="Заголовок">
           <div class="intro__divider-top">
             <svg width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +56,7 @@
               <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
             </svg>
           </div>
-          <div class="intro__info" style="color: white;">   <!--стиль что бы было лучше видно разметку-->
+          <div class="intro__info">
             <h2 class="intro__info-header">
               Седона — небольшой городок в Аризоне, заслуживающий большего!
             </h2>
@@ -71,67 +72,51 @@
           </div>
         </section>
         <section class="benefits">
-          <ul class="benefits__list">
-            <li class="benefits__item">
-              <div class="benefits__card benefits__card--blue">
-                <h3 class="benefits__card-header">Настоящий городок</h3>
-                <p class="benefits__card-number">— №1 —</p>
-                <p class="benefits__card-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-              </div>
-            </li>
+          <div class="benefits__wrapper">
+            <div class="benefits__card benefits__card--blue">
+              <h3 class="benefits__card-header">Настоящий городок</h3>
+              <p class="benefits__card-number">— №1 —</p>
+              <p class="benefits__card-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <div class="benefits__image">
               <img src="./img/mobile-photo-city.jpg" alt="Фото города">
             </div>
-            <li class="benefits__item">
-              <div class="benefits__card benefits__card--white benefits__card--home">
-                <h3 class="benefits__card-header">Жилье</h3>
-                <p class="benefits__card-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefits__card benefits__card--white benefits__card--suvenir">
-                <h3 class="benefits__card-header">Сувениры</h3>
-                <p class="benefits__card-text">Не только китайского, но и местного производства!</p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefits__card benefits__card--white benefits__card--eat">
-                <h3 class="benefits__card-header">Еда</h3>
-                <p class="benefits__card-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefits__card benefits__card--blue">
-                 <h3 class="benefits__card-header">Там есть мост дьявола</h3>
-                <p class="benefits__card-number">— №2 —</p>
-                <p class="benefits__card-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-              </div>
-            </li>
-            <div class="benefits__image">
-              <img src="./img/mobile-photo-bridge.jpg" alt="Фото моста">
+            <div class="benefits__card benefits__card--white benefits__card--home">
+              <h3 class="benefits__card-title">Жилье</h3>
+              <p class="benefits__card-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
-            <li class="benefits__item">
-               <div class="benefits__card benefits__card--beige">
-                <h3 class="benefits__card-header">Небольшая площадь</h3>
-                <p class="benefits__card-number">— №3 —</p>
-                <p class="benefits__card-text">Все интересные места находяться очень близко</p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefits__card benefits__card--beige">
-                <h3 class="benefits__card-header">Красивая дорога</h3>
-                <p class="benefits__card-number">— №4 —</p>
-                <p class="benefits__card-text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefits__card benefits__card--beige">
-                <h3 class="benefits__card-header">Мало туристов</h3>
-                <p class="benefits__card-number">— №5 —</p>
-                <p class="benefits__card-text">Большинство едет в Гранд Коньон и толпиться там</p>
-              </div>
-            </li>
-          </ul>
+            <div class="benefits__card benefits__card--white benefits__card--suvenir">
+              <h3 class="benefits__card-title">Сувениры</h3>
+              <p class="benefits__card-description">Не только китайского, но и местного производства!</p>
+            </div>
+            <div class="benefits__card benefits__card--white benefits__card--eat">
+              <h3 class="benefits__card-title">Еда</h3>
+              <p class="benefits__card-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </div>
+            <div class="benefits__card benefits__card--blue">
+              <h3 class="benefits__card-header">Там есть мост дьявола</h3>
+              <p class="benefits__card-number">— №2 —</p>
+              <p class="benefits__card-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="benefits__image">
+            <img src="./img/mobile-photo-bridge.jpg" alt="Фото моста">
+            </div>
+            <div class="benefits__card benefits__card--beige">
+              <h3 class="benefits__card-header">Небольшая площадь</h3>
+              <p class="benefits__card-number">— №3 —</p>
+              <p class="benefits__card-text">Все интересные места находяться очень близко</p>
+            </div>
+            <div class="benefits__card benefits__card--beige">
+              <h3 class="benefits__card-header">Красивая дорога</h3>
+              <p class="benefits__card-number">— №4 —</p>
+              <p class="benefits__card-text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            </div>
+            <div class="benefits__card benefits__card--beige">
+              <h3 class="benefits__card-header">Мало туристов</h3>
+              <p class="benefits__card-number">— №5 —</p>
+              <p class="benefits__card-text">Большинство едет в Гранд Коньон и толпиться там</p>
+            </div>
+          </div>
         </section>
         <section class="search">
           <div class="search__wrapper">
