@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -12,7 +13,7 @@
         <a class="page-header__logo">
           <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -46,93 +47,93 @@
     <!--header end-->
     <!--main start-->
     <main class="page-main">
-      <div class="page-main__wrapper">
-        <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
-        <section class="intro">
-          <img class="intro__header" src="./img/text-index.svg" width="282" height="214" alt="Заголовок">
-          <div class="intro__divider-top">
-            <svg width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
-              <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
-            </svg>
+      <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
+      <section class="intro">
+        <div class="intro__header">
+          <img src="./img/text-index.svg" width="282" height="214" alt="Заголовок">
+        </div>
+        <div class="intro__divider-top">
+          <svg width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
+            <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="intro__info">
+          <h2 class="intro__info-header">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </h2>
+          <p class="intro__info-text">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </div>
+        <div class="intro__divider-bottom">
+          <svg width="320" height="37" viewBox="0 0 320 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white"/>
+          </svg>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="benefits__wrapper">
+          <div class="benefits__card benefits__card--blue">
+            <h3 class="benefits__card-header">Настоящий городок</h3>
+            <p class="benefits__card-number">— №1 —</p>
+            <p class="benefits__card-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="intro__info">
-            <h2 class="intro__info-header">
-              Седона — небольшой городок в Аризоне, заслуживающий большего!
-            </h2>
-            <p class="intro__info-text">
-              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-            </p>
+          <div class="benefits__image benefits__image--one">
+            <img src="./img/mobile-photo-city.jpg" alt="Фото города">
           </div>
-          <div class="intro__divider-bottom">
-            <svg width="320" height="37" viewBox="0 0 320 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white"/>
-            </svg>
+          <div class="benefits__card benefits__card--white benefits__card--home">
+            <h3 class="benefits__card-title">Жилье</h3>
+            <p class="benefits__card-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-        </section>
-        <section class="benefits">
-          <div class="benefits__wrapper">
-            <div class="benefits__card benefits__card--blue">
-              <h3 class="benefits__card-header">Настоящий городок</h3>
-              <p class="benefits__card-number">— №1 —</p>
-              <p class="benefits__card-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <div class="benefits__image">
-              <img src="./img/mobile-photo-city.jpg" alt="Фото города">
-            </div>
-            <div class="benefits__card benefits__card--white benefits__card--home">
-              <h3 class="benefits__card-title">Жилье</h3>
-              <p class="benefits__card-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </div>
-            <div class="benefits__card benefits__card--white benefits__card--suvenir">
-              <h3 class="benefits__card-title">Сувениры</h3>
-              <p class="benefits__card-description">Не только китайского, но и местного производства!</p>
-            </div>
-            <div class="benefits__card benefits__card--white benefits__card--eat">
-              <h3 class="benefits__card-title">Еда</h3>
-              <p class="benefits__card-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-            </div>
-            <div class="benefits__card benefits__card--blue">
-              <h3 class="benefits__card-header">Там есть мост дьявола</h3>
-              <p class="benefits__card-number">— №2 —</p>
-              <p class="benefits__card-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <div class="benefits__image">
-            <img src="./img/mobile-photo-bridge.jpg" alt="Фото моста">
-            </div>
-            <div class="benefits__card benefits__card--beige">
-              <h3 class="benefits__card-header">Небольшая площадь</h3>
-              <p class="benefits__card-number">— №3 —</p>
-              <p class="benefits__card-text">Все интересные места находяться очень близко</p>
-            </div>
-            <div class="benefits__card benefits__card--beige">
-              <h3 class="benefits__card-header">Красивая дорога</h3>
-              <p class="benefits__card-number">— №4 —</p>
-              <p class="benefits__card-text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-            </div>
-            <div class="benefits__card benefits__card--beige">
-              <h3 class="benefits__card-header">Мало туристов</h3>
-              <p class="benefits__card-number">— №5 —</p>
-              <p class="benefits__card-text">Большинство едет в Гранд Коньон и толпиться там</p>
-            </div>
+          <div class="benefits__card benefits__card--white benefits__card--suvenir">
+            <h3 class="benefits__card-title">Сувениры</h3>
+            <p class="benefits__card-description">Не только китайского, но и местного производства!</p>
           </div>
-        </section>
-        <section class="search">
-          <div class="search__wrapper">
-            <h2 class="search__header">Заинтересовались?</h2>
-            <p class="search__text">
-              Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
-            <a href="#" class="search__link">Найти гостиницу</a>
+          <div class="benefits__card benefits__card--white benefits__card--eat">
+            <h3 class="benefits__card-title">Еда</h3>
+            <p class="benefits__card-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
-        </section>
-        <section class="map">
-          <div class="map__wrapper">
-
+          <div class="benefits__image benefits__image--two">
+          <img src="./img/mobile-photo-bridge.jpg" alt="Фото моста">
           </div>
-        </section>
-      </div>
+          <div class="benefits__card benefits__card--blue">
+            <h3 class="benefits__card-header">Там есть мост дьявола</h3>
+            <p class="benefits__card-number">— №2 —</p>
+            <p class="benefits__card-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <div class="benefits__card benefits__card--beige">
+            <h3 class="benefits__card-header">Небольшая площадь</h3>
+            <p class="benefits__card-number">— №3 —</p>
+            <p class="benefits__card-text">Все интересные места находяться очень близко</p>
+          </div>
+          <div class="benefits__card benefits__card--beige">
+            <h3 class="benefits__card-header">Красивая дорога</h3>
+            <p class="benefits__card-number">— №4 —</p>
+            <p class="benefits__card-text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
+          <div class="benefits__card benefits__card--beige">
+            <h3 class="benefits__card-header">Мало туристов</h3>
+            <p class="benefits__card-number">— №5 —</p>
+            <p class="benefits__card-text">Большинство едет в Гранд Коньон и толпиться там</p>
+          </div>
+        </div>
+      </section>
+      <section class="search">
+        <div class="search__wrapper">
+          <h2 class="search__header">Заинтересовались?</h2>
+          <p class="search__text">
+            Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a href="#" class="search__link">Найти гостиницу</a>
+        </div>
+      </section>
+      <section class="map">
+        <div class="map__wrapper">
+          <img src="./img/map-mobile.jpg.png" alt="Карта">
+        </div>
+      </section>
     </main>
     <!--main end-->
     <!--footer start-->

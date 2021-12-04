@@ -1,7 +1,9 @@
 .intro {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
+  margin-top: 90px;
   background-position: center;
-  background-image: url("/source/img/back-mobile.png");
   background-repeat: no-repeat;
   background-color: @white;
 }
@@ -9,10 +11,14 @@
 .intro__header {
   margin: 0 auto;
   padding: 0;
+  background-image: url("/source/img/back-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @black;
 }
 
 .intro__divider-top {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .intro__info {
@@ -37,5 +43,17 @@
 
 
 .intro__divider-bottom {
-  margin: 0 auto;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .intro__divider-bottom {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__divider-bottom {
+    display: none;
+  }
 }
