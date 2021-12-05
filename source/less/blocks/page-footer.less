@@ -1,9 +1,29 @@
-.page-footer__wrapper {
+.page-footer {
+  width: 100%;
   margin: 0 auto;
 }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 
-
-
-
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
