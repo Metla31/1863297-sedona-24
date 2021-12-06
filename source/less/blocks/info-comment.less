@@ -1,4 +1,6 @@
 .info-comment {
+  display: flex;
+  flex-direction: column;
   border: 0;
   border-top: 1px solid @color-e5;
   font-weight: bold;
@@ -6,6 +8,22 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .info-comment {
+    grid-column: 1/4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-comment {
+    grid-column: 1/4;
+  }
+}
+
+.info__header--button {
+  grid-column: 1/4;
 }
 
 .info-comment__text {
