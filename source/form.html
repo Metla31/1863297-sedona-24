@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -66,7 +67,8 @@
           </p>
         </div>
         <form action="https://echo.htmlacademy.ru" class="page-form">
-          <fieldset class="form__info-name info-name">Представьтесь:
+          <fieldset class="form__info-name info-name">
+            <p class="info__header">Представьтесь:</p>
             <label class="info-name__label" for="name">Имя*:</label>
             <input class="info-name__input" type="text" id="name" name="Имя">
             <label class="info-name__label" for="surname">Фамилия*:</label>
@@ -74,31 +76,42 @@
             <label class="info-name__label" for="patronymic">Отчество:</label>
             <input class="info-name__input" type="text" id="patronymic" name="Отчество">
           </fieldset>
-          <fieldset class="form__info-contacts info-contacts">Контактная информация:
+          <fieldset class="form__info-contacts info-contacts">
+            <p class="info__header">Контактная информация:</p>
             <label class="info-contacts__label" for="tel-number">Контактный телефон*:</label>
             <input class="info-contacts__input" type="tel" id="tel-number" name="Номер телефона">
             <label class="info-contacts__label" for="email">Электронная почта*:</label>
             <input class="info-contacts__input" type="email" id="email" name="Электронная почта">
           </fieldset>
-          <fieldset class="form__info-impression info-impression">Ваше Общее впечатление:
+          <fieldset class="form__info-impression info-impression">
+            <p class="info__header--button">Ваше общее впечатление:</p>
+            <div class="info-impression__radio"></div>
             <input class="info-impression__input" type="radio" id="positively" name="impression" value="Положительно" checked>
             <label class="info-impression__lebel" for="positively">Скорее положительное</label>
+            <div class="info-impression__radio"></div>
             <input class="info-impression__input" type="radio" id="negatively" name="impression" value="Отрицательно">
             <label class="info-impression__lebel" for="negatively">Скорее отрицательное</label>
+            <div class="info-impression__radio"></div>
             <input class="info-impression__input" type="radio" id="embarrassingly" name="impression" value="Затруднительно">
             <label class="info-impression__lebel" for="embarrassingly">Затрудняюсь ответить</label>
           </fieldset>
-          <fieldset class="form__info-places info-places">Посещенные достопримечательности:
+          <fieldset class="form__info-places info-places">
+            <p class="info__header--button">Посещенные достопримечательности:</p>
+            <div class="info-places__checkbox"></div>
             <input class="info-places__input" type="checkbox" id="bridge" name="bridge" value="Мост дьявола" checked>
             <label class="info-places__label" for="bridge">Мост Дьявола</label>
+            <div class="info-places__checkbox"></div>
             <input class="info-places__input" type="checkbox" id="mountain" name="mountain" value="Гора-Колокол" checked>
             <label class="info-places__label" for="mountain">Гора-Колокол</label>
+            <div class="info-places__checkbox"></div>
             <input class="info-places__input" type="checkbox" id="slide-park" name="slide-park" value="Слайд-парк" checked>
             <label class="info-places__label" for="slide-park">Слайд-парк</label>
+            <div class="info-places__checkbox"></div>
             <input class="info-places__input" type="checkbox" id="red-rocks" name="red-rocks" value="Красные скалы">
             <label class="info-places__label" for="red-rocks">Красные скалы</label>
           </fieldset>
-          <fieldset class="form__info-comment info-comment">Опишите свои эмоции:
+          <fieldset class="form__info-comment info-comment">
+            <p class="info__header">Опишите свои эмоции:</p>
             <textarea class="info-comment__text" rows="10" cols="30" id="content" name="content">Опишите подробно все свои восторги
             </textarea>
           </fieldset>

@@ -1,4 +1,8 @@
 .info-contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0;
   border: 0;
   border-top: 1px solid @color-e5;
   font-weight: bold;
@@ -6,6 +10,22 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .info-contacts {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-contacts {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .info-contacts__label {
