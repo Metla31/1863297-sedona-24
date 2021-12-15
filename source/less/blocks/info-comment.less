@@ -10,18 +10,6 @@
   text-transform: uppercase;
 }
 
-@media (min-width: @tablet-width) {
-  .info-comment {
-    grid-column: 1/4;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .info-comment {
-    grid-column: 1/4;
-  }
-}
-
 .info__header--button {
   grid-column: 1/4;
 }
@@ -32,4 +20,16 @@
   text-align: left;
   border: 0;
   background-color: @gray95;
+}
+
+@media (min-width: @tablet-width) {
+  .info-comment {
+    grid-column: 1/4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-comment {
+    grid-column: 1/4;
+  }
 }

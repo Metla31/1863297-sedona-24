@@ -12,18 +12,6 @@
   text-transform: uppercase;
 }
 
-@media (min-width: @tablet-width) {
-  .info-impression {
-    order: -1;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .info-impression {
-    order: -1;
-  }
-}
-
 .info__header--button {
   grid-column: 1/4;
 }
@@ -48,4 +36,16 @@
 .info-impression__input {
   border: 0;
   background-color: @gray95;
+}
+
+@media (min-width: @tablet-width) {
+  .info-impression {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-impression {
+    order: -1;
+  }
 }

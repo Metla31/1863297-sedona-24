@@ -4,32 +4,46 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
 }
 
 .social__link {
   display: block;
   width: 46px;
   height: 48px;
+  margin-right: 6px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   background-color: @blue;
 }
 
+.social__link:last-child {
+  margin-right: 0px;
+}
+
 .social__link--twitter {
-  background-image: url("/source/img/icon-twitter.svg");
+  background-image: url("../img/icon-twitter.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .social__link--facebook {
-  background-image: url("/source/img/icon-facebook.svg");
+  background-image: url("../img/icon-facebook.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .social__link--youtube {
-  background-image: url("/source/img/icon-youtube.svg");
+  background-image: url("../img/icon-youtube.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
