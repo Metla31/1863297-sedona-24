@@ -13,11 +13,10 @@
         <a class="page-header__logo">
           <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
         </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
+        <button class="page-header__toggle page-header__toggle--closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link">
@@ -40,7 +39,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+
         </nav>
       </div>
     </header>
@@ -52,14 +51,7 @@
         <div class="intro__header">
           <img class="intro__header--img" src="./img/text-index.svg" width="282" height="214" alt="Заголовок">
         </div>
-        <!--
-          <div class="intro__divider-top">
-          <svg width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
-            <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
-          </svg>
-        </div>
-       -->
+        <div class="intro__divider-top"><span class="visually-hidden">Верхний разделитель</span></div>
         <div class="intro__info">
           <h2 class="intro__info-header">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -68,14 +60,8 @@
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
         </div>
-        <!--
-          <div class="intro__divider-bottom">
-          <svg width="320" height="37" viewBox="0 0 320 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white"/>
-          </svg>
-        </div>
-        -->
+        <div class="intro__divider-bottom"><span class="visually-hidden">Нижний разделитель</span></div>
+
       </section>
       <section class="benefits">
         <div class="benefits__wrapper">
@@ -84,24 +70,23 @@
             <p class="benefits__card-number">— №1 —</p>
             <p class="benefits__card-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="benefits__image benefits__image--one">
-            <img src="./img/mobile-photo-city.jpg" alt="Фото города">
-          </div>
-          <div class="benefits__card benefits__card--white benefits__card--home">
+          <img class="benefits__image benefits__image--one" src="./img/photo-city.jpg" alt="Фото города">
+          <div class="benefits__card benefits__card--white ">
+            <div class="benefits__card--home"><span class="visually-hidden">Жилье</span></div>
             <h3 class="benefits__card-title">Жилье</h3>
             <p class="benefits__card-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="benefits__card benefits__card--white benefits__card--suvenir">
+          <div class="benefits__card benefits__card--white">
+            <div class="benefits__card--suvenir"><span class="visually-hidden">Жилье</span></div>
             <h3 class="benefits__card-title">Сувениры</h3>
             <p class="benefits__card-description">Не только китайского, но и местного производства!</p>
           </div>
-          <div class="benefits__card benefits__card--white benefits__card--eat">
+          <div class="benefits__card benefits__card--white">
+            <div class="benefits__card--eat"><span class="visually-hidden">Жилье</span></div>
             <h3 class="benefits__card-title">Еда</h3>
             <p class="benefits__card-description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
-          <div class="benefits__image benefits__image--two">
-          <img src="./img/mobile-photo-bridge.jpg" alt="Фото моста">
-          </div>
+          <img class="benefits__image benefits__image--two" src="./img/photo-bridge.jpg" alt="Фото моста">
           <div class="benefits__card benefits__card--blue">
             <h3 class="benefits__card-header">Там есть мост дьявола</h3>
             <p class="benefits__card-number">— №2 —</p>
