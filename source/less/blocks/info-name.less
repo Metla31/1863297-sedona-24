@@ -1,7 +1,7 @@
 .info-name {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  min-height: 304px;
   padding: 0;
   border: 0;
   border-top: 1px solid @color-e5;
@@ -12,11 +12,10 @@
   text-transform: uppercase;
 }
 
-.info__header {
-  grid-column: 1/3;
-}
-
 .info-name__label {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;

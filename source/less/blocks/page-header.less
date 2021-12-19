@@ -5,9 +5,59 @@
   padding: 0;
 }
 
+.page-header__wrapper {
+  position: relative;
+  min-height: 56px;
+}
+
 .page-header__logo {
   display: block;
+  width: 102px;
   height: 84px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 51px);
+  z-index: 2;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 65px;
+  height: 56px;
+  background-color: @white;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__toggle--closed {
+  background-image: url("../img/burger-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-header__toggle--opened {
+  background-image: url("../img/menu-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: @blue;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
