@@ -1,13 +1,25 @@
 .intro-page {
   margin: 0 auto;
+  min-height: 180px;
+  background-image: url("../img/background-intro-fomr.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro-page__header {
+  display: block;
+  margin: 0 auto;
+  padding-top: 52px;
 }
 
 .intro-page__info {
-  margin: 0 auto;
+  margin: 36px 7px 16px 7px;
 }
 
 .intro-page__info-header {
+  display: block;
   font-weight: bold;
+  margin-bottom: 50px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -15,9 +27,46 @@
 }
 
 .intro-page__info-text {
+  display: block;
   font-weight: normal;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .intro-page__info {
+    margin-top: 64px;
+    margin-bottom: 60px;
+  }
+
+  .intro-page__info-header {
+    width: 434px;
+    margin: 0 auto;
+  }
+
+  .intro-page__info-text {
+    width: 434px;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro-page__info {
+    margin-top: 64px;
+    margin-bottom: 60px;
+  }
+
+  .intro-page__info-header {
+    width: 434px;
+    margin: 0 auto;
+  }
+
+  .intro-page__info-text {
+    width: 434px;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
 }

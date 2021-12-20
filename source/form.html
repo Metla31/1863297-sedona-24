@@ -13,11 +13,10 @@
         <a class="page-header__logo" href="./index.html">
           <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
         </a>
+        <button class="page-header__toggle page-header__toggle--closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link" href="./index.html">
@@ -29,7 +28,7 @@
                   фото и видео
                 </a>
               </li>
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item">
                 <a class="main-nav__link">
                   форма отзыва
                 </a>
@@ -40,7 +39,6 @@
                 </a>
               </li>
             </ul>
-          </div>
         </nav>
       </div>
     </header>
@@ -51,12 +49,6 @@
         <h1 class="visually-hidden">Оставьте свой отзыв</h1>
         <section class="intro-page">
           <img class="intro-page__header" src="./img/catalog/SEDONA.svg" width="282" height="214" alt="Заголовок">
-          <div class="intro-page__divider-top">
-            <svg width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
-              <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
-            </svg>
-          </div>
         </section>
         <div class="intro-page__info">
           <h2 class="intro-page__info-header">
@@ -68,7 +60,7 @@
         </div>
         <form action="https://echo.htmlacademy.ru" class="page-form">
           <fieldset class="form__info-name info-name">
-            <p class="info__header">Представьтесь:</p>
+            <p class="info-name__header">Представьтесь:</p>
             <label class="info-name__label" for="name">
               <p>Имя*:</p>
               <input class="info-name__input" type="text" id="name" name="Имя">
@@ -83,49 +75,66 @@
             </label>
           </fieldset>
           <fieldset class="form__info-contacts info-contacts">
-            <p class="info__header">Контактная информация:</p>
+            <p class="info-contacts__header">Контактная информация:</p>
             <label class="info-contacts__label" for="tel-number">
-              <p>Контактный телефон*:</p>
+              <p class="info-contacts__notification">Контактный телефон*:</p>
               <input class="info-contacts__input" type="tel" id="tel-number" name="Номер телефона">
             </label>
             <label class="info-contacts__label" for="email">
-              <p>Электронная почта*:</p>
+              <p class="info-contacts__notification">Электронная почта*:</p>
               <input class="info-contacts__input" type="email" id="email" name="Электронная почта">
             </label>
           </fieldset>
           <fieldset class="form__info-impression info-impression">
-            <p class="info__header--button">Ваше общее впечатление:</p>
-            <div class="info-impression__radio"></div>
-            <input class="info-impression__input" type="radio" id="positively" name="impression" value="Положительно" checked>
-            <label class="info-impression__lebel" for="positively">Скорее положительное</label>
-            <div class="info-impression__radio"></div>
-            <input class="info-impression__input" type="radio" id="negatively" name="impression" value="Отрицательно">
-            <label class="info-impression__lebel" for="negatively">Скорее отрицательное</label>
-            <div class="info-impression__radio"></div>
-            <input class="info-impression__input" type="radio" id="embarrassingly" name="impression" value="Затруднительно">
-            <label class="info-impression__lebel" for="embarrassingly">Затрудняюсь ответить</label>
+            <p class="info-impression__header">Ваше общее впечатление:</p>
+            <label class="info-impression__label" for="positively">
+              <input class="info-impression__input visually-hidden" type="radio" id="positively" name="impression" value="Положительно" checked>
+              <span class="info-impression__radio"></span>
+              <span class="info-impression__text">Скорее положительное</span>
+            </label>
+            <label class="info-impression__label" for="negatively">
+              <input class="info-impression__input visually-hidden" type="radio" id="negatively" name="impression" value="Отрицательно">
+              <span class="info-impression__radio"></span>
+              <span class="info-impression__text">Скорее отрицательное</span>
+            </label>
+            <label class="info-impression__label" for="embarrassingly">
+              <input class="info-impression__input visually-hidden" type="radio" id="embarrassingly" name="impression" value="Затруднительно">
+              <span class="info-impression__radio"></span>
+              <span class="info-impression__text">Затрудняюсь ответить</span>
+            </label>
           </fieldset>
           <fieldset class="form__info-places info-places">
-            <p class="info__header--button">Посещенные достопримечательности:</p>
-            <div class="info-places__checkbox"></div>
-            <input class="info-places__input" type="checkbox" id="bridge" name="bridge" value="Мост дьявола" checked>
-            <label class="info-places__label" for="bridge">Мост Дьявола</label>
-            <div class="info-places__checkbox"></div>
-            <input class="info-places__input" type="checkbox" id="mountain" name="mountain" value="Гора-Колокол" checked>
-            <label class="info-places__label" for="mountain">Гора-Колокол</label>
-            <div class="info-places__checkbox"></div>
-            <input class="info-places__input" type="checkbox" id="slide-park" name="slide-park" value="Слайд-парк" checked>
-            <label class="info-places__label" for="slide-park">Слайд-парк</label>
-            <div class="info-places__checkbox"></div>
-            <input class="info-places__input" type="checkbox" id="red-rocks" name="red-rocks" value="Красные скалы">
-            <label class="info-places__label" for="red-rocks">Красные скалы</label>
+            <p class="info-places__header">Посещенные достопримечательности:</p>
+            <label class="info-places__label" for="bridge">
+              <input class="info-places__input visually-hidden" type="checkbox" id="bridge" name="bridge" value="Мост дьявола" checked>
+              <span class="info-places__checkbox"></span>
+              <span class="info-places__text">Мост Дьявола</span>
+            </label>
+            <label class="info-places__label" for="mountain">
+              <input class="info-places__input visually-hidden" type="checkbox" id="mountain" name="mountain" value="Гора-Колокол" checked>
+              <span class="info-places__checkbox"></span>
+              <span class="info-places__text">Гора-Колокол</span>
+            </label>
+            <label class="info-places__label" for="slide-park">
+              <input class="info-places__input visually-hidden" type="checkbox" id="slide-park" name="slide-park" value="Слайд-парк" checked>
+              <span class="info-places__checkbox"></span>
+              <span class="info-places__text">Слайд-парк</span>
+            </label>
+            <label class="info-places__label" for="red-rocks">
+              <input class="info-places__input visually-hidden" type="checkbox" id="red-rocks" name="red-rocks" value="Красные скалы">
+              <span class="info-places__checkbox"></span>
+              <span class="info-places__text">Красные скалы</span>
+            </label>
           </fieldset>
           <fieldset class="form__info-comment info-comment">
-            <p class="info__header">Опишите свои эмоции:</p>
+            <p class="info-comment__header">Опишите свои эмоции:</p>
             <textarea class="info-comment__text" rows="10" cols="30" id="content" name="content">Опишите подробно все свои восторги
             </textarea>
           </fieldset>
-          <button class="page-form__button" type="submit">Отправить отзыв</button>
+          <div class="page-form__container">
+            <button class="page-form__button" type="submit">Отправить отзыв</button>
+            <p class="page-form__notification">* — обязательные поля</p>
+          </div>
         </form>
       </div>
     </main>

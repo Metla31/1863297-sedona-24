@@ -5,6 +5,9 @@
   padding: 0;
   border: 0;
   border-top: 1px solid @color-e5;
+}
+
+.info-name__header {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -24,6 +27,9 @@
 }
 
 .info-name__input {
+  display: block;
+  min-width: 192px;
+  height: 58px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -31,4 +37,39 @@
   text-transform: uppercase;
   border: 0;
   background-color: @gray95;
+}
+
+@media (min-width: @tablet-width) {
+  .info-name {
+    border: 0;
+  }
+
+  .info-name__header {
+    margin-bottom: 45px;
+    margin-left: 35px;
+    text-align: start;
+  }
+
+  .info-name__label {
+    padding: 0;
+    margin: 10px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info-name {
+    border: 0;
+  }
+  .info-name__header {
+    margin-bottom: 55px;
+    margin-left: 35px;
+    text-align: start;
+  }
+
+  .info-name__label {
+    padding: 0;
+    margin: 10px;
+    margin-left: 40px;
+  }
 }
