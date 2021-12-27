@@ -11,7 +11,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="./index.html">
-          <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logotype-tablet.svg">
+            <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
+          </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -48,7 +52,9 @@
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">Фото и видео</h1>
         <section class="intro-page">
-          <img class="intro-page__header" src="./img/catalog/SEDONA.svg" width="282" height="214" alt="Заголовок">
+          <div class="intro-page__header">
+            <img src="./img/catalog/SEDONA.svg" width="282" height="40" alt="Заголовок">
+          </div>
         </section>
         <div class="intro-page__info">
           <h2 class="intro-page__info-header">
@@ -64,80 +70,84 @@
               <li class="catalog__item catalog__item--first item">
                 <div class="item__card">
                   <a href="#" class="item__link item__link--first">
-                    <img class="item__image item__image--first" src="./img/catalog/photo-1-mobile.jpg" alt="Народные просторы" width="280"
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.jpg">
+                      <source media="(min-width: 768px)" srcset="./img/catalog/photo-1-tablet.jpg">
+                      <img class="item__image item__image--first" src="./img/catalog/photo-1-mobile.jpg" alt="Народные просторы" width="280"
                     height="280">
+                    </picture>
                   </a>
                   <div class="item__wrapper">
                     <div class="item__counter-text">
                       <h3 class="item__header">Народные просторы</h3>
                       <p class="item__author">Автор фото: Борис</p>
                     </div>
-                    <div class="item__counter-like">
-                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                      </svg>
+                    <button type="button" class="item__counter-like">
                       <p class="counter__number">1350</p>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </li>
               <li class="catalog__item item">
                 <div class="item__card">
                   <a href="#" class="item__link">
-                    <img class="item__image" src="./img/catalog/photo-2-mobile.jpg" alt="Местная растительность" width="280"
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.jpg">
+                      <source media="(min-width: 768px)" srcset="./img/catalog/photo-2-tablet.jpg">
+                      <img class="item__image" src="./img/catalog/photo-2-mobile.jpg" alt="Местная растительность" width="280"
                     height="280">
+                    </picture>
                   </a>
                   <div class="item__wrapper">
                     <div class="item__counter-text">
                       <h3 class="item__header">Местная растительность</h3>
                       <p class="item__author">Автор фото: Сергей</p>
                     </div>
-                    <div class="item__counter-like">
-                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                      </svg>
+                    <button type="button" class="item__counter-like">
                       <p class="counter__number">143</p>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </li>
               <li class="catalog__item item">
                 <div class="item__card">
                   <a href="#" class="item__link">
-                    <img class="item__image" src="./img/catalog/photo-3-mobile.jpg" alt="Дорога на север" width="280"
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.jpg">
+                      <source media="(min-width: 768px)" srcset="./img/catalog/photo-3-tablet.jpg">
+                      <img class="item__image" src="./img/catalog/photo-3-mobile.jpg" alt="Дорога на север" width="280"
                     height="280">
+                    </picture>
                   </a>
                   <div class="item__wrapper">
                     <div class="item__counter-text">
                       <h3 class="item__header">Дорога на север</h3>
                       <p class="item__author">Автор фото: Петр</p>
                     </div>
-                    <div class="item__counter-like">
-                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                      </svg>
+                    <button type="button" class="item__counter-like">
                       <p class="counter__number">96</p>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </li>
               <li class="catalog__item item">
                 <div class="item__card">
                   <a href="#" class="item__link">
-                    <img class="item__image" src="./img/catalog/photo-4-mobile.jpg" alt="Мост дьявола" width="280"
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.jpg">
+                      <source media="(min-width: 768px)" srcset="./img/catalog/photo-4-tablet.jpg">
+                      <img class="item__image" src="./img/catalog/photo-4-mobile.jpg" alt="Мост дьявола" width="280"
                     height="280">
+                    </picture>
                   </a>
                   <div class="item__wrapper">
                     <div class="item__counter-text">
                       <h3 class="item__header">Мост дьявола</h3>
                       <p class="item__author">Автор фото: Антон</p>
                     </div>
-                    <div class="item__counter-like">
-                      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
-                      </svg>
+                    <button type="button" class="item__counter-like">
                       <p class="counter__number">254</p>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </li>
