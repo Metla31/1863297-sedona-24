@@ -10,7 +10,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="./index.html">
-          <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logotype-tablet.svg">
+            <img src="./img/logotype-mobile.svg" width="102" height="84" alt="логотип">
+          </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -75,11 +79,11 @@
           </fieldset>
           <fieldset class="form__info-contacts info-contacts">
             <p class="info-contacts__header">Контактная информация:</p>
-            <label class="info-contacts__label" for="tel-number">
+            <label class="info-contacts__label info-contacts__label--telmunber" for="tel-number">
               <p class="info-contacts__notification">Контактный телефон*:</p>
-              <input class="info-contacts__input" type="tel" id="tel-number" name="Номер телефона">
+              <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона">
             </label>
-            <label class="info-contacts__label" for="email">
+            <label class="info-contacts__label info-contacts__label--email" for="email">
               <p class="info-contacts__notification">Электронная почта*:</p>
               <input class="info-contacts__input" type="email" id="email" name="Электронная почта">
             </label>

@@ -16,6 +16,7 @@
 
 .item__image {
   object-fit: cover;
+  margin-top: 22px;
 }
 
 .item__wrapper {
@@ -61,7 +62,7 @@
   background-color: inherit;
   color: @black;
   background-image: url("../img/catalog/like-icon.svg");
-  background-position: 0px 10px;
+  background-position: 0 10px;
   background-repeat: no-repeat;
 }
 
@@ -74,6 +75,10 @@
     width: 100%;
     border: 0;
     height: 100%;
+  }
+
+  .item__image {
+    margin-top: 0;
   }
 
   .item__card {
@@ -124,6 +129,10 @@
     border: 0;
   }
 
+  .item__image {
+    margin-top: 0;
+  }
+
   .item__card {
     position: relative;
     width: 100%;
@@ -139,7 +148,7 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-    border: 0px;
+    border: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
