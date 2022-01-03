@@ -65,7 +65,7 @@
           <fieldset class="form__info-name info-name">
             <p class="info-name__header">Представьтесь:</p>
             <label class="info-name__label" for="name">
-              Имя*:
+              <p>Имя*:</p>
               <input class="info-name__input" type="text" id="name" name="Имя">
             </label>
             <label class="info-name__label" for="surname">
@@ -79,13 +79,15 @@
           </fieldset>
           <fieldset class="form__info-contacts info-contacts">
             <p class="info-contacts__header">Контактная информация:</p>
-            <label class="info-contacts__label info-contacts__label--telmunber" for="tel-number">
+            <label class="info-contacts__label" for="tel-number">
               <p class="info-contacts__notification">Контактный телефон*:</p>
-              <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона">
+              <input class="info-contacts__input info-contacts__input--telmunber" type="tel" maxlength="15" id="tel-number" name="Номер телефона">
+              <span class="info-contacts__tel-ico"></span>
             </label>
-            <label class="info-contacts__label info-contacts__label--email" for="email">
+            <label class="info-contacts__label" for="email">
               <p class="info-contacts__notification">Электронная почта*:</p>
-              <input class="info-contacts__input" type="email" id="email" name="Электронная почта">
+              <input class="info-contacts__input info-contacts__input--email" type="email" id="email" name="Электронная почта">
+              <span class="info-contacts__email-ico"></span>
             </label>
           </fieldset>
           <fieldset class="form__info-impression info-impression">

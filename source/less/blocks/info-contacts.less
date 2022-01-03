@@ -24,7 +24,6 @@
 }
 
 .info-contacts__input {
-  position: relative;
   display: block;
   margin: 0 auto;
   min-width: 264px;
@@ -38,6 +37,36 @@
   text-transform: uppercase;
   border: 0;
   background-color: @gray95;
+}
+
+.info-contacts__input--telmunber {
+  position: relative;
+}
+
+.info-contacts__tel-ico {
+  position: absolute;
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @hex2;
+}
+
+.info-contacts__input--email {
+  position: relative;
+}
+
+.info-contacts__email-ico {
+  position: absolute;
+  display: block;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/mail.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @hex2;
 }
 
 @media (min-width: @tablet-width) {
