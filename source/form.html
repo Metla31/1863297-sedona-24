@@ -66,15 +66,15 @@
             <p class="info-name__header">Представьтесь:</p>
             <label class="info-name__label" for="name">
               <p>Имя*:</p>
-              <input class="info-name__input" type="text" id="name" name="Имя">
+              <input class="info-name__input info-name__input--name" type="text" id="name" name="Имя" value="Петр">
             </label>
             <label class="info-name__label" for="surname">
               <p>Фамилия*:</p>
-              <input class="info-name__input" type="text" id="surname" name="Фамилия">
+              <input class="info-name__input info-name__input--surname" type="text" id="surname" name="Фамилия" value="Иванов">
             </label>
             <label class="info-name__label" for="patronymic">
               <p>Отчество:</p>
-              <input class="info-name__input" type="text" id="patronymic" name="Отчество">
+              <input class="info-name__input info-name__input--patronymic" type="text" id="patronymic" name="Отчество" value="Александрович">
             </label>
           </fieldset>
           <fieldset class="form__info-contacts info-contacts">
@@ -82,14 +82,14 @@
             <label class="info-contacts__label" for="tel-number">
               <p class="info-contacts__notification">Контактный телефон*:</p>
               <div class="info-contacts__container">
-                <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона">
+                <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона" value="Введите телефон">
                 <span class="info-contacts__tel-ico"></span>
               </div>
             </label>
             <label class="info-contacts__label" for="email">
               <p class="info-contacts__notification">Электронная почта*:</p>
               <div class="info-contacts__container">
-                <input class="info-contacts__input" type="email" id="email" name="Электронная почта">
+                <input class="info-contacts__input" type="email" id="email" name="Электронная почта" value="Введите e-mail">
                 <span class="info-contacts__email-ico"></span>
               </div>
             </label>
@@ -170,18 +170,21 @@
       </div>
     </footer>
     <!--footer end-->
-    <div class="modal__error modal__error-opened error">
+    <!--modal eror start-->
+    <div class="modal__error modal__error--closed error">
       <p class="error__header">Что-то пошло не так!</p>
       <p class="error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="error__button" type="button">Ок</button>
     </div>
-
-    <div class="modal__success modal__success-opened success">
+    <!--modal eror end-->
+    <!--modal success start-->
+    <div class="modal__success modal__success--opened success">
       <p class="success__header">Ваш отзыв отправлен!</p>
       <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="success__container">
         <button class="success__button" type="button">Закрыть окно</button>
       </div>
     </div>
+    <!--modal success end-->
   </body>
 </html>
