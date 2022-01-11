@@ -20,7 +20,7 @@
         <button class="page-header__toggle page-header__toggle--closed" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="main-nav main-nav__list--closed">
+        <nav class="main-nav main-nav--closed">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link">
@@ -150,12 +150,22 @@
     </footer>
     <!--footer end-->
     <script>
-      var button = document.querySelector('.page-header__toggle');
-      var menu = document.querySelector('.main-nav');
+      const button = document.querySelector('.page-header__toggle');
+      const menu = document.querySelector('.main-nav');
       button.addEventListener('click',function() {
-        button.classList.add('page-header__toggle--opened')
-        menu.classList.add('.main-nav--opened')
+        if (button.classList.contains('page-header__toggle--opened')) {
+          button.classList.add('page-header__toggle--closed');
+          button.classList.remove('page-header__toggle--opened');
+          menu.classList.add('main-nav--closed');
+          menu.classList.remove('main-nav--opened');
+        }
+        else {
+          button.classList.remove('page-header__toggle--closed');
+          button.classList.add('page-header__toggle--opened');
+          menu.classList.remove('main-nav--closed');
+          menu.classList.add('main-nav--opened');
+        }
       });
-      </script>
+    </script>
   </body>
 </html>

@@ -164,9 +164,9 @@
             <div class="video__player player">
               <img src="./img/catalog/video-mobile.jpg" alt="Картинка видео" class="player__image">
               <div class="player__controls">
-                <div class="player__slider--wrapper">
-                  <div class="player__slider--scale">
-                    <button class="player__slider--toggle">
+                <div class="player__slider-wrapper">
+                  <div class="player__slider-scale">
+                    <button class="player__slider-toggle">
                       <span class="visually-hidden">Прокрутка видео</span>
                     </button>
                   </div>
@@ -205,5 +205,23 @@
       </div>
     </footer>
     <!--footer end-->
+    <script>
+      const button = document.querySelector('.page-header__toggle');
+      const menu = document.querySelector('.main-nav');
+      button.addEventListener('click',function() {
+        if (button.classList.contains('page-header__toggle--opened')) {
+          button.classList.add('page-header__toggle--closed');
+          button.classList.remove('page-header__toggle--opened');
+          menu.classList.add('main-nav--closed');
+          menu.classList.remove('main-nav--opened');
+        }
+        else {
+          button.classList.remove('page-header__toggle--closed');
+          button.classList.add('page-header__toggle--opened');
+          menu.classList.remove('main-nav--closed');
+          menu.classList.add('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

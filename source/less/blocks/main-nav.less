@@ -8,6 +8,14 @@
   background-color: @blue;
 }
 
+.main-nav--opened {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
 .main-nav--closed {
   display: none;
 }
@@ -50,6 +58,10 @@
   .main-nav {
     display: flex;
     background-color: @white;
+  }
+
+  .main-nav--opened {
+    z-index: 1;
   }
 
   .main-nav__wrapper {

@@ -80,14 +80,14 @@
           <fieldset class="form__info-contacts info-contacts">
             <p class="info-contacts__header">Контактная информация:</p>
             <label class="info-contacts__label" for="tel-number">
-              <p class="info-contacts__notification">Контактный телефон*:</p>
+              <p class="info-contacts__notification"><span class="info-contacts__notification-text">Контактный</span>телефон*:</p>
               <div class="info-contacts__container">
                 <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона" value="Введите телефон">
                 <span class="info-contacts__tel-ico"></span>
               </div>
             </label>
             <label class="info-contacts__label" for="email">
-              <p class="info-contacts__notification">Электронная почта*:</p>
+              <p class="info-contacts__notification info-contacts__notification-email">Электронная почта*:</p>
               <div class="info-contacts__container">
                 <input class="info-contacts__input" type="email" id="email" name="Электронная почта" value="Введите e-mail">
                 <span class="info-contacts__email-ico"></span>
@@ -137,7 +137,7 @@
           </fieldset>
           <fieldset class="form__info-comment info-comment">
             <p class="info-comment__header">Опишите свои эмоции:</p>
-            <textarea class="info-comment__text" rows="10" cols="30" id="content" name="content">Опишите подробно все свои восторги
+            <textarea class="info-comment__text" id="content" name="content">Опишите подробно все свои восторги
             </textarea>
           </fieldset>
           <div class="page-form__container">
@@ -178,7 +178,7 @@
     </div>
     <!--modal eror end-->
     <!--modal success start-->
-    <div class="modal__success modal__success--opened success">
+    <div class="modal__success modal__success--closed success">
       <p class="success__header">Ваш отзыв отправлен!</p>
       <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="success__container">
@@ -186,5 +186,23 @@
       </div>
     </div>
     <!--modal success end-->
+    <script>
+      const button = document.querySelector('.page-header__toggle');
+      const menu = document.querySelector('.main-nav');
+      button.addEventListener('click',function() {
+        if (button.classList.contains('page-header__toggle--opened')) {
+          button.classList.add('page-header__toggle--closed');
+          button.classList.remove('page-header__toggle--opened');
+          menu.classList.add('main-nav--closed');
+          menu.classList.remove('main-nav--opened');
+        }
+        else {
+          button.classList.remove('page-header__toggle--closed');
+          button.classList.add('page-header__toggle--opened');
+          menu.classList.remove('main-nav--closed');
+          menu.classList.add('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
