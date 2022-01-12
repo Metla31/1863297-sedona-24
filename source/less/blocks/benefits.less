@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 220px;
+  min-height: 220px;
 }
 
 .benefits__card--blue {
@@ -18,19 +18,36 @@
   background-color: @blue;
 }
 
-.benefits__card--white {
+.benefits__card-home {
   position: relative;
   width: 100%;
-  height: 139px;
+  min-height: 139px;
   background-color: @white;
+  margin-top: 17px;
 }
 
-.benefits__card--home {
+.benefits__card-suvenir {
+  position: relative;
+  width: 100%;
+  min-height: 139px;
+  background-color: @white;
+  margin-top: -7px;
+}
+
+.benefits__card-eat {
+  position: relative;
+  width: 100%;
+  min-height: 139px;
+  background-color: @white;
+  margin-top: -30px;
+}
+
+.benefits__card-home--img-home {
   display: block;
   width: 39px;
   height: 37px;
   position: absolute;
-  top: 26px;
+  top: 10px;
   left: 21px;
   background-image: url("../img/icon-house.svg");
   background-position: center;
@@ -38,12 +55,12 @@
   background-size: contain;
 }
 
-.benefits__card--suvenir {
+.benefits__card-suvenir--img-suvenir {
   display: block;
   width: 39px;
   height: 37px;
   position: absolute;
-  top: 26px;
+  top: 6px;
   left: 21px;
   background-image: url("../img/icon-gift.svg");
   background-position: center;
@@ -51,30 +68,48 @@
   background-size: contain;
 }
 
-.benefits__card--eat {
+.benefits__card-eat--img-eat {
   display: block;
   width: 39px;
   height: 37px;
   position: absolute;
-  top: 26px;
-  left: 21px;
+  top: 12px;
+  left: 18px;
   background-image: url("../img/icon-burger.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-
 .benefits__card-header {
   display: block;
-  width: 282px;
   margin: 0 auto;
-  margin-top: 65px;
+  width: 282px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.benefits__card-header--one {
+  margin-top: 65px;
+}
+
+.benefits__card-header--two {
+  margin-top: 39px;
+}
+
+.benefits__card-header--three {
+  margin-top: 25px;
+}
+
+.benefits__card-header--four {
+  margin-top: 25px;
+}
+
+.benefits__card-header--five {
+  margin-top: 25px;
 }
 
 .benefits__card-number {
@@ -101,6 +136,19 @@
   text-transform: uppercase;
 }
 
+.benefits__card-text--three {
+  padding: 0 21px;
+}
+
+.benefits__card-text--four {
+  width: 255px;
+}
+
+.benefits__card-text--five {
+  width: 255px;
+  line-height: 24px;
+}
+
 .benefits__card-title {
   font-weight: bold;
   font-size: 18px;
@@ -110,18 +158,48 @@
   padding-left: 70px;
 }
 
-.benefits__card-description {
+.benefits__card-description--home {
+  width: 210px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 22px;
   text-align: left;
   text-transform: uppercase;
   padding-left: 70px;
+  margin-top: -4px;
+}
+
+.benefits__card-description--suvenir {
+  width: 200px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 70px;
+  margin-top: -5px;
+}
+
+.benefits__card-description--eat {
+  width: 180px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 70px;
+  margin-top: -4px;
+}
+
+.benefits__card--two {
+  margin-top: 19px;
+  min-height: 192px;
 }
 
 .benefits__card--beige {
   background-color: @beige;
   border-bottom: 1px solid @gray84;
+  min-height: 166px;
 }
 
 .benefits__card--beige:last-child {
@@ -134,12 +212,23 @@
   height: 260px;
 }
 
+//@media (min-width: @mobile-width-only) {}
+
 @media (min-width: @tablet-width) {
   .benefits__wrapper {
     display: grid;
-    grid-template-rows: 260px 1fr 260px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 256px 1fr 256px 1fr;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     gap: 0;
+    height: 1098px;
+  }
+
+  .benefits__card {
+    min-height: 256px;
+  }
+
+  .benefits__card--two {
+    margin-top: 0;
   }
 
   .benefits__card--beige {
@@ -156,20 +245,69 @@
     grid-column-end: 3;
   }
 
+  .benefits__card-home {
+    min-height: 330px;
+    margin-top: 0;
+  }
+
+  .benefits__card-suvenir {
+    min-height: 330px;
+    margin-top: 0;
+  }
+
+  .benefits__card-eat {
+    min-height: 330px;
+    margin-top: 0;
+  }
+
   .benefits__card-header {
-    width: 180px;
+    width: 159px;
+    margin-top: 39px;
+    font-size: 21px;
+  }
+
+  .benefits__card-header--two {
+    margin-top: 42px;
+    width: 150px;
+  }
+
+  .benefits__card-header--three {
+    margin-top: 42px;
+  }
+
+  .benefits__card-header--four {
+    margin-top: 43px;
+  }
+
+  .benefits__card-header--five {
     margin-top: 42px;
   }
 
   .benefits__card-number {
     width: 180px;
-    margin-top: 25px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 21px;
   }
 
   .benefits__card-text {
-    width: 180px;
+    width: 190px;
     margin-bottom: 41px;
+    line-height: 21px;
+  }
+
+  .benefits__card-text--three {
+    width: 185px;
+    line-height: 20px;
+  }
+
+  .benefits__card-text--four {
+    width: 145px;
+    line-height: 20px;
+  }
+
+  .benefits__card-text--five {
+    width: 150px;
+    line-height: 20px;
   }
 
   .benefits__card--white {
@@ -178,22 +316,41 @@
 
   .benefits__card-title {
     margin: 0 auto;
-    margin-top: 145px;
+    margin-top: 157px;
     padding: 0;
+    font-size: 21px;
   }
 
-  .benefits__card-description {
-    width: 185px;
-    text-align: center;
+  .benefits__card-description--home {
     margin: 0 auto;
-    padding: 0;
+    margin-top: 21px;
+    width: 190px;
+    text-align: center;
+    padding-left: 0;
   }
 
-  .benefits__card--home {
+  .benefits__card-description--suvenir {
+    margin: 0 auto;
+    margin-top: 21px;
+    width: 195px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .benefits__card-description--eat {
+    margin: 0 auto;
+    margin-top: 21px;
+    width: 155px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .benefits__card-home--img-home {
     display: block;
     width: 75px;
     height: 72px;
     position: absolute;
+    top: 58px;
     left: calc(50% - 37px);
     background-image: url("../img/icon-house.svg");
     background-position: center;
@@ -201,11 +358,12 @@
     background-size: contain;
   }
 
-  .benefits__card--suvenir {
+  .benefits__card-suvenir--img-suvenir {
     display: block;
     width: 75px;
     height: 72px;
     position: absolute;
+    top: 58px;
     left: calc(50% - 37px);
     background-image: url("../img/icon-gift.svg");
     background-position: center;
@@ -213,16 +371,21 @@
     background-size: contain;
   }
 
-  .benefits__card--eat {
+  .benefits__card-eat--img-eat {
     display: block;
     width: 75px;
     height: 72px;
     position: absolute;
+    top: 58px;
     left: calc(50% - 37px);
     background-image: url("../img/icon-burger.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .benefits__image {
+    height: 256px;
   }
 }
 

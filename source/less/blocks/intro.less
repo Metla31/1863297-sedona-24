@@ -85,15 +85,16 @@
 
 @media (min-width: @tablet-width) {
   .intro__header {
-    height: 518px;
+    height: 530px;
     margin: 0 auto;
     padding: 0;
     background-image: url("../img/background-intro.jpg");
     background-repeat: no-repeat;
+    background-position: 50% 0px;
   }
 
   .intro__header::before {
-    bottom: 39px;
+    bottom: 12px;
   }
 
   .intro__header--img {
@@ -103,18 +104,30 @@
     margin-bottom: 90px;
   }
 
+  .intro__info {
+    min-height: 195px;
+  }
+
   .intro__info::before {
     display: none;
   }
 
   .intro__info-header {
-    margin-top: 43px;
-    min-height: 70px;
+    width: 455px;
+    min-height: 81px;
+    font-size: 21px;
   }
 
   .intro__info-text {
-    margin-bottom: 52px;
-    min-height: 40px;
+    display: block;
+    width: 485px;
+    margin: 0 auto;
+    font-weight: normal;
+    min-height: 55px;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
