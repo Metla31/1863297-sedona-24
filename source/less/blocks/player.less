@@ -3,7 +3,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
+  margin-top: -11px;
+  margin-bottom: 87px;
 }
 
 .player__controls {
@@ -35,12 +36,12 @@
 .player__slider-toggle {
   position: absolute;
   display: block;
-  top: -5px;
+  top: -4px;
   left: 35px;
   border: 0;
   padding: 0;
-  width: 13px;
-  height: 13px;
+  width: 11px;
+  height: 11px;
   background: @white;
   border-radius: 50%;
   cursor: pointer;
@@ -51,6 +52,22 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-height: 56px;
+  min-height: 63px;
   background-color: @gray95;
+}
+
+@media (min-width: @tablet-width) {
+  .player {
+    width: 648px;
+    height: 500px;
+    margin-bottom: 113px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .player {
+    width: 800px;
+    height: 500px;
+    margin-bottom: 84px;
+  }
 }
