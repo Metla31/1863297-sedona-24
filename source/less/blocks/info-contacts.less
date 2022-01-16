@@ -5,9 +5,12 @@
   padding: 0;
   border: 0;
   border-top: 1px solid @color-e5;
+  margin-top: 4px;
 }
 
 .info-contacts__header {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -16,10 +19,12 @@
 }
 
 .info-contacts__notification {
+  margin-left: 40px;
+  margin-bottom: 8px;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -34,12 +39,12 @@
 .info-contacts__input {
   display: block;
   margin: 0 auto;
-  width: 222px;
+  width: 200px;
   height: 58px;
   padding: 0;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 21px;
   text-align: start;
   border: 0;
   background-color: @gray95;
@@ -68,10 +73,33 @@
 
 @media (min-width: @tablet-width) {
   .info-contacts {
+    position: relative;
     border: 0;
     grid-column: 1/4;
     display: flex;
     flex-direction: column;
+  }
+
+  .info-contacts::before {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    content: "";
+    display: block;
+    width: 123px;
+    height: 1px;
+    background-color: @gray86;
+  }
+
+  .info-contacts::after {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    content: "";
+    display: block;
+    width: 123px;
+    height: 1px;
+    background-color: @gray86;
   }
 
   .info-contacts__notification {

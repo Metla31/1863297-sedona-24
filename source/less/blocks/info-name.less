@@ -1,13 +1,14 @@
 .info-name {
   display: flex;
   flex-direction: column;
-  min-height: 304px;
   padding: 0;
   border: 0;
   border-top: 1px solid @color-e5;
 }
 
 .info-name__header {
+  margin-top: 20px;
+  margin-bottom: 19px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -18,7 +19,9 @@
 .info-name__label {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  width: 280px;
+  margin-bottom: 18px;
+  padding: 0 20px;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
@@ -30,30 +33,55 @@
   display: block;
   height: 58px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   text-align: start;
   border: 0;
   background-color: @gray95;
   margin-left: 15px;
-  padding-left: 22px;
+  padding-left: 19px;
 }
 
 .info-name__input--name {
-  width: 230px;
+  width: 208px;
 }
 
 .info-name__input--surname {
-  width: 192px;
+  width: 171px;
 }
 
 .info-name__input--patronymic {
-  width: 194px;
+  width: 175px;
+}
+
+.info-name__text--name {
+  margin-top: 18px;
+  margin-left: -2px;
+}
+
+.info-name__text--surname {
+  margin-top: 18px;
+  margin-left: -2px;
+}
+
+.info-name__text--patronymic {
+  margin-top: 18px;
+  margin-left: -2px;
 }
 
 @media (min-width: @tablet-width) {
   .info-name {
+    position: relative;
     border: 0;
+  }
+
+  .info-name::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 292px;
+    background-color: @gray86;
   }
 
   .info-name__header {

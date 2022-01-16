@@ -9,26 +9,58 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 55px;
+  margin-top: -14px;
 }
 
-.info__header--button {
-  grid-column: 1/4;
+.info-comment__header {
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .info-comment__text {
+  display: block;
+  width: 236px;
+  height: 118px;
+  resize: none;
+  font-family: "PT Sans";
   font-size: 18px;
+  font-weight: bold;
   line-height: 26px;
   text-align: start;
+  text-transform: initial;
   border: 0;
   background-color: @gray95;
-  padding: 20px 22px;
+  padding: 14px 23px 29px 24px;
 }
 
 @media (min-width: @tablet-width) {
   .info-comment {
+    position: relative;
     grid-column: 1/4;
     margin-bottom: 58px;
     border: 0;
+  }
+
+  .info-comment::before {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    content: "";
+    display: block;
+    width: 123px;
+    height: 1px;
+    background-color: @gray86;
+  }
+
+  .info-comment::after {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    content: "";
+    display: block;
+    width: 123px;
+    height: 1px;
+    background-color: @gray86;
   }
 }
 

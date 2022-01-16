@@ -2,10 +2,12 @@
   padding: 0;
   border: 0;
   border-top: 1px solid @color-e5;
-  margin: 0 auto;
+  margin-top: -2px;
 }
 
 .info-impression__header {
+  margin-top: 19px;
+  margin-bottom: 36px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -17,7 +19,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
   margin-left: 24px;
 }
 
@@ -32,32 +34,34 @@
 .info-impression__input[type="radio"]:checked + .info-impression__radio::before {
   position: absolute;
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: #333333;
-  top: 15px;
-  left: 15px;
+  top: 16px;
+  left: 16px;
   content: "";
 }
 
 .info-impression__radio {
   position: absolute;
+  top: -14px;
+  left: -5px;
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border: 0;
   border-radius: 50%;
   background-color: @gray95;
 }
 
 .info-impression__text {
-  font-weight: normal;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
-  text-transform: uppercase;
-  padding-left: 75px;
+  text-transform: initial;
+  padding-left: 73px;
 }
 
 @media (min-width: @tablet-width) {
