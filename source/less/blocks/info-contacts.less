@@ -82,8 +82,8 @@
 
   .info-contacts::before {
     position: absolute;
-    top: 30px;
-    left: 60px;
+    top: -4px;
+    left: 58px;
     content: "";
     display: block;
     width: 123px;
@@ -93,8 +93,8 @@
 
   .info-contacts::after {
     position: absolute;
-    top: 30px;
-    right: 60px;
+    top: -4px;
+    right: 58px;
     content: "";
     display: block;
     width: 123px;
@@ -102,9 +102,18 @@
     background-color: @gray86;
   }
 
+  .info-contacts__header {
+    margin-top: -13px;
+    font-size: 21px;
+  }
+
+  .info-contacts__label {
+    margin-bottom: 11px;
+  }
+
   .info-contacts__notification {
     text-align: start;
-    margin-left: 22px;
+    margin-left: 80px;
   }
 
   .info-contacts__container {
@@ -118,31 +127,69 @@
 
 @media (min-width: @desktop-width) {
   .info-contacts {
+    max-width: 960px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 480px 480px;
     grid-template-rows: 1fr 1fr;
-    border: 0;
+  }
+
+  .info-contacts::before {
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    background-color: @gray86;
+  }
+
+  .info-contacts::after {
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    background-color: @gray86;
   }
 
   .info-contacts__header {
     grid-column: 1/4;
+    margin-top: 27px;
   }
 
   .info-contacts__label {
     display: flex;
-    justify-content: space-around;
+    margin-top: 21px;
   }
 
   .info-contacts__notification {
-    text-align: start;
-    margin-left: 22px;
+    margin-left: 0;
+  }
+
+  .info-contacts__notification-text {
+    margin-right: 14px;
+  }
+
+  .info-contacts__notification-text--span {
+    display: none;
+  }
+
+  .info-contacts__notification-email {
+    margin-top: 17px;
+    width: 167px;
   }
 
   .info-contacts__container {
-    width: 315px;
+    margin: 0;
+    width: 316px;
   }
 
   .info-contacts__input {
-    width: 257px;
+    width: 250px;
   }
 }

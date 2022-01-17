@@ -77,6 +77,8 @@
 
   .info-name::before {
     position: absolute;
+    top: 13px;
+    left: -3px;
     content: "";
     display: block;
     width: 1px;
@@ -85,56 +87,107 @@
   }
 
   .info-name__header {
+    margin-top: 11px;
     margin-bottom: 45px;
-    margin-left: 35px;
+    margin-left: 56px;
     text-align: start;
+    font-size: 21px;
   }
 
   .info-name__label {
     padding: 0;
     margin: 10px;
-    margin-left: 40px;
+    margin-left: 60px;
+    margin-bottom: 8px;
+  }
+
+  .info-name__text--name {
+    margin-top: 18px;
+    margin-left: -19px;
+  }
+
+  .info-name__text--surname {
+    margin-top: 18px;
+    margin-left: -20px;
+  }
+
+  .info-name__text--patronymic {
+    margin-top: 18px;
+    margin-left: -23px;
   }
 
   .info-name__input--name {
-    width: 216px;
+    width: 195px;
   }
 
   .info-name__input--surname {
-    width: 178px;
+    width: 157px;
   }
 
   .info-name__input--patronymic {
-    width: 180px;
+    width: 157px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .info-name {
+    max-width: 480px;
+    position: relative;
     border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .info-name::before {
+    position: absolute;
+    top: 13px;
+    left: -11px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 292px;
+    background-color: @gray86;
   }
 
   .info-name__header {
-    margin-bottom: 55px;
-    margin-left: 35px;
-    text-align: start;
+    margin-bottom: 44px;
+    margin-left: 69px;
   }
 
   .info-name__label {
-    padding: 0;
-    margin: 10px;
-    margin-left: 40px;
+    margin: 0;
+    width: 485px;
+    margin-top: 11px;
+    margin-bottom: 6px;
+  }
+
+  .info-name__text--name {
+    margin-left: 52px;
+  }
+
+  .info-name__text--surname {
+    margin-left: 56px;
+  }
+
+  .info-name__text--patronymic {
+    margin-left: 51px;
+  }
+
+  .info-name__input {
+    margin-left: 16px;
+    padding-left: 20px;
   }
 
   .info-name__input--name {
-    width: 350px;
+    width: 326px;
   }
 
   .info-name__input--surname {
-    width: 312px;
+    margin-top: 3px;
+    width: 290px;
   }
 
   .info-name__input--patronymic {
-    width: 314px;
+    width: 290px;
   }
 }

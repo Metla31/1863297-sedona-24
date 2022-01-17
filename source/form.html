@@ -21,7 +21,7 @@
         </button>
         <nav class="main-nav main-nav--closed main-nav--nojs">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item">
                 <a class="main-nav__link" href="./index.html">
                   Главная
                 </a>
@@ -31,7 +31,10 @@
                   фото и видео
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item--logo">
+                <span class="visually-hidden">логотип</span>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
                 <a class="main-nav__link">
                   форма отзыва
                 </a>
@@ -57,7 +60,7 @@
           <h2 class="intro-page__info-header">
             Оставьте свой отзыв
           </h2>
-          <p class="intro-page__info-text">
+          <p class="intro-page__info-text intro-page__info-text--form">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </div>
@@ -80,7 +83,7 @@
           <fieldset class="form__info-contacts info-contacts">
             <p class="info-contacts__header">Контактная информация:</p>
             <label class="info-contacts__label" for="tel-number">
-              <p class="info-contacts__notification"><span class="info-contacts__notification-text">Контактный</span> телефон*:</p>
+              <p class="info-contacts__notification info-contacts__notification-text"><span class="info-contacts__notification-text--span">Контактный</span> телефон*:</p>
               <div class="info-contacts__container">
                 <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона" value="Введите телефон">
                 <span class="info-contacts__tel-ico"></span>
@@ -114,24 +117,24 @@
           </fieldset>
           <fieldset class="form__info-places info-places">
             <p class="info-places__header">Посещенные достопримечательности:</p>
-            <label class="info-places__label" for="bridge">
+            <label class="info-places__label info-places__label--bridge" for="bridge">
               <input class="info-places__input visually-hidden" type="checkbox" id="bridge" name="bridge" value="Мост дьявола" checked>
-              <span class="info-places__checkbox"></span>
+              <span class="info-places__checkbox info-places__checkbox--bridge"></span>
               <span class="info-places__text">Мост Дьявола</span>
             </label>
-            <label class="info-places__label" for="mountain">
+            <label class="info-places__label info-places__label--mountain" for="mountain">
               <input class="info-places__input visually-hidden" type="checkbox" id="mountain" name="mountain" value="Гора-Колокол" checked>
-              <span class="info-places__checkbox"></span>
+              <span class="info-places__checkbox info-places__checkbox--mountain"></span>
               <span class="info-places__text">Гора-Колокол</span>
             </label>
-            <label class="info-places__label" for="slide-park">
+            <label class="info-places__label info-places__label--slide-park" for="slide-park">
               <input class="info-places__input visually-hidden" type="checkbox" id="slide-park" name="slide-park" value="Слайд-парк" checked>
-              <span class="info-places__checkbox"></span>
+              <span class="info-places__checkbox info-places__checkbox--slide-park"></span>
               <span class="info-places__text">Слайд-парк</span>
             </label>
-            <label class="info-places__label" for="red-rocks">
+            <label class="info-places__label info-places__label--red-rocks" for="red-rocks">
               <input class="info-places__input visually-hidden" type="checkbox" id="red-rocks" name="red-rocks" value="Красные скалы">
-              <span class="info-places__checkbox"></span>
+              <span class="info-places__checkbox info-places__checkbox--red-rocks"></span>
               <span class="info-places__text">Красные скалы</span>
             </label>
           </fieldset>
@@ -141,7 +144,7 @@
             </textarea>
           </fieldset>
           <div class="page-form__container">
-            <button class="page-form__button" type="submit">Отправить отзыв</button>
+            <button class="page-form__button" type="submit"><span class="page-form__button-text">Отправить отзыв</span></button>
             <p class="page-form__notification">* — обязательные поля</p>
           </div>
         </form>
