@@ -1,6 +1,7 @@
 .info-comment {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   border: 0;
   border-top: 1px solid @color-e5;
   font-weight: bold;
@@ -38,13 +39,14 @@
     position: relative;
     grid-column: 1/4;
     margin-bottom: 58px;
+    margin-top: 56px;
     border: 0;
   }
 
   .info-comment::before {
     position: absolute;
     top: 13px;
-    left: 58px;
+    left: 15px;
     content: "";
     display: block;
     width: 123px;
@@ -55,7 +57,7 @@
   .info-comment::after {
     position: absolute;
     top: 13px;
-    right: 58px;
+    right: 15px;
     content: "";
     display: block;
     width: 123px;
@@ -70,8 +72,7 @@
 
   .info-comment__text {
     margin-top: 41px;
-    margin-left: 46px;
-    width: 600px;
+    width: 605px;
     height: 115px;
     padding: 17px 23px 29px 21px;
   }
@@ -83,17 +84,18 @@
     padding: 0;
     grid-column: 1/4;
     max-width: 960px;
+    margin-top: 2px;
   }
 
   .info-comment::before {
     top: 33px;
-    left: 0px;
+    left: 0;
     width: 280px;
   }
 
   .info-comment::after {
     top: 33px;
-    right: 0px;
+    right: 0;
     width: 280px;
   }
 

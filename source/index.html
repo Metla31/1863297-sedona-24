@@ -73,7 +73,11 @@
             <p class="benefits__card-number">— №1 —</p>
             <p class="benefits__card-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="benefits__image benefits__image--one" src="./img/photo-city.jpg" alt="Фото города">
+          <picture class="benefits__image benefits__image--one">
+            <source media="(min-width: 1200px)" srcset="./img/photo-city.jpg">
+            <source media="(min-width: 768px)" srcset="./img/photo-city-tablet.jpg">
+            <img src="./img/photo-city-mobile.jpg" alt="Фото города">
+          </picture>
           <div class="benefits__card benefits__card-home">
             <div class="benefits__card-home--img-home"><span class="visually-hidden">Жилье</span></div>
             <h3 class="benefits__card-title">Жилье</h3>
@@ -89,7 +93,11 @@
             <h3 class="benefits__card-title">Еда</h3>
             <p class="benefits__card-description--eat">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
-          <img class="benefits__image benefits__image--two" src="./img/photo-bridge.jpg" alt="Фото моста">
+          <picture class="benefits__image benefits__image--two">
+            <source media="(min-width: 1200px)" srcset="./img/photo-bridge.jpg">
+            <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet.jpg">
+            <img src="./img/photo-bridge-mobile.jpg" alt="Фото моста">
+          </picture>
           <div class="benefits__card benefits__card--blue benefits__card--two">
             <h3 class="benefits__card-header benefits__card-header--two">Там есть мост дьявола</h3>
             <p class="benefits__card-number">— №2 —</p>

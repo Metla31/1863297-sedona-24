@@ -1,14 +1,15 @@
 .modal__error--opened {
-  position: absolute;
-  bottom: -100%;
+  position: fixed;
+  bottom: 50%;
+  left: calc(50% - 160px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 320px;
   height: 280px;
   text-transform: uppercase;
   background-color: @white;
+  box-shadow: 0 25px rgba(242, 242, 242, 1);
 }
 
 .modal__error--closed {
@@ -16,19 +17,23 @@
 }
 
 .error__header {
-  font-size: 21px;
+  margin-top: 42px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .error__text {
-  font-size: 18px;
-  line-height: 26px;
+  width: 210px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
 }
 
 .error__button {
   display: block;
+  margin-top: 9px;
   width: 180px;
   height: 58px;
   border: none;
@@ -45,14 +50,18 @@
   .error {
     width: 400px;
     height: 347px;
+    left: calc(50% - 200px);
   }
 
   .error__header {
+    width: 212px;
     font-size: 30px;
     line-height: 40px;
+    text-align: center;
   }
 
   .error__text {
+    width: 280px;
     font-size: 14px;
     line-height: 24px;
   }
@@ -60,29 +69,7 @@
   .error__button {
     width: 272px;
     height: 58px;
-    font-size: 21px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .error {
-    width: 400px;
-    height: 347px;
-  }
-
-  .error__header {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .error__text {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .error__button {
-    width: 272px;
-    height: 58px;
-    font-size: 21px;
+    font-size: 19px;
+    margin-top: 25px;
   }
 }

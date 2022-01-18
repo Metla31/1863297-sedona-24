@@ -1,13 +1,13 @@
-.intro-page {
+.intro-catalog {
   position: relative;
   margin: 0 auto;
   height: 158px;
-  background-image: url("../img/background-intro-fomr.jpg");
+  background-image: url("../img/background-intro-page--mobile.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% -56px;
 }
 
-.intro-page::before {
+.intro-catalog::before {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -19,22 +19,22 @@
   background-position: center;
 }
 
-.intro-page__header {
+.intro-catalog__header {
   width: 230px;
   height: 40px;
   margin: 0 auto;
   padding-top: 52px;
 }
 
-.intro-page__info {
+.intro-catalog__info {
   margin: 36px 7px 16px 7px;
 }
 
-.intro-page__info-form {
+.intro-catalog__info-form {
   margin: 40px 7px 17px 7px;
 }
 
-.intro-page__info-header {
+.intro-catalog__info-header {
   display: block;
   font-weight: bold;
   margin-bottom: 32px;
@@ -44,7 +44,7 @@
   text-transform: uppercase;
 }
 
-.intro-page__info-text {
+.intro-catalog__info-text {
   display: block;
   margin: 0 auto;
   width: 280px;
@@ -56,64 +56,63 @@
 }
 
 @media (min-width: @tablet-width) {
-  .intro-page {
+  .intro-catalog {
     height: 290px;
+    background-image: url("../img/background-intro-page.png");
+    background-repeat: no-repeat;
+    background-position: 50% -228px;
   }
 
-  .intro-page__header {
+  .intro-catalog__header {
     width: 457px;
     height: 78px;
     padding-top: 95px;
   }
 
-  .intro-page__info {
+  .intro-catalog__info {
     margin-top: 64px;
     margin-bottom: 76px;
   }
 
-  .intro-page__info-header {
+  .intro-catalog__info-header {
     width: 434px;
     margin: 0 auto;
     font-size: 30px;
     line-height: 21px;
   }
 
-  .intro-page__info-text {
+  .intro-catalog__info-text {
     width: 434px;
     margin: 0 auto;
     margin-top: 38px;
     font-size: 14px;
     line-height: 24px;
   }
-
-  .intro-page__info-text--form {
-    width: 436px;
-    line-height: 23px;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .intro-page {
+  .intro-catalog {
     height: 300px;
+    background-position: 50% -217px;
   }
 
-  .intro-page__header {
+  .intro-catalog__header {
     width: 460px;
     height: 80px;
     padding-top: 101px;
   }
 
-  .intro-page__info {
-    margin-top: 116px;
-    margin-bottom: 0;
+  .intro-catalog__info {
+    margin-top: 103px;
+    margin-bottom: 78px;
   }
 
-  .intro-page__info-header {
+  .intro-catalog__info-header {
     width: 434px;
     margin: 0 auto;
   }
 
-  .intro-page__info-text {
+  .intro-catalog__info-text {
     margin-top: 34px;
     line-height: 26px;
   }
