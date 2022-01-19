@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
-  <body class="page__body">
+    <link rel="shortcut icon" href="./img/fav-ico.jpg" type="image/x-icon">
+  <body class="page__body body">
+    <div class="body__wrapper">
     <!--header start-->
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -69,15 +71,15 @@
             <p class="info-name__header">Представьтесь:</p>
             <label class="info-name__label" for="name">
               <p class="info-name__text--name">Имя*:</p>
-              <input class="info-name__input info-name__input--name" type="text" id="name" name="Имя" value="Петр">
+              <input class="info-name__input info-name__input--name" type="text" id="name" name="Имя" placeholder="Петр">
             </label>
             <label class="info-name__label" for="surname">
               <p class="info-name__text--surname">Фамилия*:</p>
-              <input class="info-name__input info-name__input--surname" type="text" id="surname" name="Фамилия" value="Иванов">
+              <input class="info-name__input info-name__input--surname" type="text" id="surname" name="Фамилия" placeholder="Иванов">
             </label>
             <label class="info-name__label" for="patronymic">
               <p class="info-name__text--patronymic">Отчество:</p>
-              <input class="info-name__input info-name__input--patronymic" type="text" id="patronymic" name="Отчество" value="Александрович">
+              <input class="info-name__input info-name__input--patronymic" type="text" id="patronymic" name="Отчество" placeholder="Александрович">
             </label>
           </fieldset>
           <fieldset class="form__info-contacts info-contacts">
@@ -85,14 +87,14 @@
             <label class="info-contacts__label" for="tel-number">
               <p class="info-contacts__notification info-contacts__notification-text"><span class="info-contacts__notification-text--span">Контактный</span> телефон*:</p>
               <div class="info-contacts__container">
-                <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона" value="Введите телефон">
+                <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона" placeholder="Введите телефон">
                 <span class="info-contacts__tel-ico"></span>
               </div>
             </label>
             <label class="info-contacts__label" for="email">
               <p class="info-contacts__notification info-contacts__notification-email">Электронная почта*:</p>
               <div class="info-contacts__container">
-                <input class="info-contacts__input" type="email" id="email" name="Электронная почта" value="Введите e-mail">
+                <input class="info-contacts__input" type="email" id="email" name="Электронная почта" placeholder="Введите e-mail">
                 <span class="info-contacts__email-ico"></span>
               </div>
             </label>
@@ -140,8 +142,7 @@
           </fieldset>
           <fieldset class="form__info-comment info-comment">
             <p class="info-comment__header">Опишите свои эмоции:</p>
-            <textarea class="info-comment__text" id="content" name="content">Опишите подробно все свои восторги
-            </textarea>
+            <textarea class="info-comment__text" id="content" name="content" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="page-form__container">
             <button class="page-form__button" type="submit"><span class="page-form__button-text">Отправить отзыв</span></button>
@@ -207,5 +208,6 @@
         }
       });
     </script>
+    </div>
   </body>
 </html>

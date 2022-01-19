@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/fav-ico.jpg" type="image/x-icon">
   </head>
-  <body class="page__body">
+  <body class="page__body body">
+    <div class="body__wrapper">
     <!--header start-->
     <header class="page-header">
       <div class="page-header__wrapper">
@@ -74,9 +76,9 @@
             <p class="benefits__card-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <picture class="benefits__image benefits__image--one">
-            <source media="(min-width: 1200px)" srcset="./img/photo-city.jpg">
-            <source media="(min-width: 768px)" srcset="./img/photo-city-tablet.jpg">
-            <img src="./img/photo-city-mobile.jpg" alt="Фото города">
+            <source media="(min-width: 1200px)" srcset="./img/photo-city.jpg 1x, ./img/photo-city@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/photo-city-tablet.jpg 1x, ./img/photo-city-tablet@2x.jpg 2x">
+            <img src="./img/photo-city-mobile.jpg" srcset="./img/photo-city-mobile@2x.jpg 2x" alt="Фото города">
           </picture>
           <div class="benefits__card benefits__card-home">
             <div class="benefits__card-home--img-home"><span class="visually-hidden">Жилье</span></div>
@@ -94,9 +96,9 @@
             <p class="benefits__card-description--eat">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </div>
           <picture class="benefits__image benefits__image--two">
-            <source media="(min-width: 1200px)" srcset="./img/photo-bridge.jpg">
-            <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet.jpg">
-            <img src="./img/photo-bridge-mobile.jpg" alt="Фото моста">
+            <source media="(min-width: 1200px)" srcset="./img/photo-bridge.jpg 1x, ./img/photo-bridge@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
+            <img src="./img/photo-bridge-mobile.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Фото моста">
           </picture>
           <div class="benefits__card benefits__card--blue benefits__card--two">
             <h3 class="benefits__card-header benefits__card-header--two">Там есть мост дьявола</h3>
@@ -178,5 +180,6 @@
         }
       });
     </script>
+    </div>
   </body>
 </html>
