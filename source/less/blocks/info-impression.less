@@ -42,6 +42,10 @@
   top: 16px;
   left: 16px;
   content: "";
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .info-impression__radio {
@@ -54,6 +58,14 @@
   border: 0;
   border-radius: 50%;
   background-color: @gray95;
+}
+
+.info-impression__radio:hover {
+  background-color: @color-e5;
+}
+
+.info-impression__radio:active {
+  background-color: @gray83;
 }
 
 .info-impression__text {

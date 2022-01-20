@@ -46,6 +46,19 @@
   text-transform: uppercase;
 }
 
+.error__button:hover {
+  background-color: @hover_button;
+}
+
+.error__button:active {
+  background-color: @active_button;
+  opacity: 0.3;
+}
+
+.error__button:disabled {
+  background-color: @color-e5;
+}
+
 @media (min-width: @tablet-width) {
   .error {
     width: 400px;

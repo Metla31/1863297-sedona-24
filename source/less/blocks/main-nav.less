@@ -43,6 +43,15 @@
   border-bottom: 1px solid #658ea7;
 }
 
+.main-nav__list a:hover {
+  background-color: @hover_button;
+}
+
+.main-nav__list a:active {
+  background-color: @active_button;
+  opacity: 0.3;
+}
+
 .main-nav__item {
   font-weight: bold;
   font-size: 18px;
@@ -93,6 +102,16 @@
     width: 153px;
   }
 
+  .main-nav__list a:hover {
+    background-color: @white;
+    color: @blue;
+  }
+
+  .main-nav__list a:active {
+    background-color: @white;
+    opacity: 0.3;
+  }
+
   .main-nav__item--logo {
     display: block;
     width: 156px;
@@ -101,6 +120,10 @@
   .main-nav__link {
     list-style: none;
     color: @black;
+  }
+
+  .main-nav__list .main-nav__link--active {
+    color: @hex76;
   }
 }
 

@@ -42,6 +42,11 @@
   background-image: url("../img/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
+
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .info-places__checkbox {
@@ -54,6 +59,14 @@
   border: 0;
   border-radius: 4px;
   background-color: @gray95;
+}
+
+.info-places__checkbox:hover {
+  background-color: @color-e5;
+}
+
+.info-places__checkbox:active {
+  background-color: @gray83;
 }
 
 .info-places__text {
