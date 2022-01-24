@@ -73,8 +73,8 @@
     <!--main start-->
     <main class="page-main">
       <div class="page-main__wrapper">
-        <h1 class="visually-hidden">Оставьте свой отзыв</h1>
         <section class="intro-form">
+          <h1 class="visually-hidden">Оставьте свой отзыв</h1>
           <img class="intro-form__header" src="./img/sedona.svg" width="282" height="214" alt="Заголовок">
         </section>
         <div class="intro-form__info intro-form__info-form">
@@ -89,33 +89,33 @@
           <fieldset class="form__info-name info-name">
             <p class="info-name__header">Представьтесь:</p>
             <label class="info-name__label" for="name">
-              <p class="info-name__text--name">Имя*:</p>
+              <span class="info-name__text--name">Имя*:</span>
               <input class="info-name__input info-name__input--name" type="text" id="name" name="Имя" placeholder="Петр">
             </label>
             <label class="info-name__label" for="surname">
-              <p class="info-name__text--surname">Фамилия*:</p>
+              <span class="info-name__text--surname">Фамилия*:</span>
               <input class="info-name__input info-name__input--surname" type="text" id="surname" name="Фамилия" placeholder="Иванов">
             </label>
             <label class="info-name__label" for="patronymic">
-              <p class="info-name__text--patronymic">Отчество:</p>
+              <span class="info-name__text--patronymic">Отчество:</span>
               <input class="info-name__input info-name__input--patronymic" type="text" id="patronymic" name="Отчество" placeholder="Александрович">
             </label>
           </fieldset>
           <fieldset class="form__info-contacts info-contacts">
             <p class="info-contacts__header">Контактная информация:</p>
             <label class="info-contacts__label" for="tel-number">
-              <p class="info-contacts__notification info-contacts__notification-text"><span class="info-contacts__notification-text--span">Контактный</span> телефон*:</p>
-              <div class="info-contacts__container">
+              <span class="info-contacts__notification info-contacts__notification-text"><span class="info-contacts__notification-text--span">Контактный</span> телефон*:</span>
+              <span class="info-contacts__container">
                 <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона" placeholder="Введите телефон">
                 <span class="info-contacts__tel-ico"></span>
-              </div>
+              </span>
             </label>
             <label class="info-contacts__label" for="email">
-              <p class="info-contacts__notification info-contacts__notification-email">Электронная почта*:</p>
-              <div class="info-contacts__container">
+              <span class="info-contacts__notification info-contacts__notification-email">Электронная почта*:</span>
+              <span class="info-contacts__container">
                 <input class="info-contacts__input" type="email" id="email" name="Электронная почта" placeholder="Введите e-mail">
                 <span class="info-contacts__email-ico"></span>
-              </div>
+              </span>
             </label>
           </fieldset>
           <fieldset class="form__info-impression info-impression">
@@ -205,7 +205,7 @@
       <p class="success__header">Ваш отзыв отправлен!</p>
       <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="success__container">
-        <button class="success__button" type="button"><p class="success__button--text">Закрыть окно</p></button>
+        <button class="success__button" type="button"><span class="success__button--text">Закрыть окно</span></button>
       </div>
     </div>
     <!--modal success end-->
