@@ -11,7 +11,7 @@
 
 .info-contacts__header {
   margin-top: 20px;
-  margin-bottom: 4px;
+  margin-bottom: 18px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -19,9 +19,14 @@
   text-transform: uppercase;
 }
 
+.info-contacts__label {
+  margin-bottom: 7px;
+}
+
 .info-contacts__notification {
-  margin-left: 40px;
-  margin-bottom: 8px;
+  display: block;
+  margin-left: 21px;
+  margin-bottom: 12px;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
@@ -60,7 +65,7 @@
   background-color: @color-e5;
 }
 
-.info-contacts__input:active {
+.info-contacts__input:focus {
   background-color: @white;
   outline: 4px @color-e5 solid;
 }
@@ -123,12 +128,17 @@
   }
 
   .info-contacts__label {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   .info-contacts__notification {
     text-align: start;
     margin-left: 80px;
+  }
+
+  .info-contacts__notification-email {
+    margin-top: 13px;
+    margin-bottom: 6px;
   }
 
   .info-contacts__container {
