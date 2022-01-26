@@ -7,6 +7,7 @@
 }
 
 .social__link {
+  position: relative;
   display: block;
   width: 46px;
   height: 48px;
@@ -17,32 +18,45 @@
   background-color: @blue;
 }
 
+.social__link::before {
+  content: '';
+  position: absolute;
+  width: 46px;
+  height: 48px;
+  top: 0;
+  left: 0;
+  display: block;
+  }
+
+.social__link:active::before {
+  opacity: 0.3;
+}
+
 .social__link:hover {
   background-color: @hover_button;
 }
 
 .social__link:active {
   background-color: @active_button;
-  opacity: 0.3;
 }
 
 .social__link:last-child {
   margin-right: 0;
 }
 
-.social__link--twitter {
+.social__link--twitter::before {
   background-image: url("../img/icon-twitter.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.social__link--facebook {
+.social__link--facebook::before{
   background-image: url("../img/icon-facebook.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.social__link--youtube {
+.social__link--youtube::before {
   background-image: url("../img/icon-youtube.svg");
   background-position: center;
   background-repeat: no-repeat;
