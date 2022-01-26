@@ -14,4 +14,3 @@ const button = document.querySelector('.page-header__toggle');
             menu.classList.add('main-nav--opened');
         }
   });
-
