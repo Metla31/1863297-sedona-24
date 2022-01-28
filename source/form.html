@@ -33,7 +33,7 @@
                   фото и видео
                 </a>
               </li>
-              <li class="main-nav__item--logo">
+              <li class="main-nav__item main-nav__item--logo">
                 <span class="visually-hidden">логотип</span>
               </li>
               <li class="main-nav__item">
@@ -58,7 +58,7 @@
           <h1 class="visually-hidden">Оставьте свой отзыв</h1>
           <img class="intro-form__header" src="./img/sedona.svg" width="282" height="40" alt="Заголовок">
         </section>
-        <div class="intro-form__info intro-form__info-form">
+        <div class="intro-form__info">
           <h2 class="intro-form__info-header">
             Оставьте свой отзыв
           </h2>
@@ -66,19 +66,19 @@
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </div>
-        <form action="https://echo.htmlacademy.ru" class="page-form">
+        <form action="https://echo.htmlacademy.ru" class="page-form form">
           <fieldset class="form__info-name info-name">
             <p class="info-name__header">Представьтесь:</p>
             <label class="info-name__label" for="name">
-              <span class="info-name__text--name">Имя*:</span>
+              <span class="info-name__label-text info-name__label-text--name">Имя*:</span>
               <input class="info-name__input info-name__input--name" type="text" id="name" name="Имя" placeholder="Петр" required>
             </label>
             <label class="info-name__label" for="surname">
-              <span class="info-name__text--surname">Фамилия*:</span>
+              <span class="info-name__label-text info-name__label-text--surname">Фамилия*:</span>
               <input class="info-name__input info-name__input--surname" type="text" id="surname" name="Фамилия" placeholder="Иванов" required>
             </label>
             <label class="info-name__label" for="patronymic">
-              <span class="info-name__text--patronymic">Отчество:</span>
+              <span class="info-name__label-text info-name__label-text--patronymic">Отчество:</span>
               <input class="info-name__input info-name__input--patronymic" type="text" id="patronymic" name="Отчество" placeholder="Александрович">
             </label>
           </fieldset>
@@ -142,7 +142,9 @@
           </fieldset>
           <fieldset class="form__info-comment info-comment">
             <p class="info-comment__header">Опишите свои эмоции:</p>
-            <textarea class="info-comment__text" id="content" name="content" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label for="" class="info-comment__label">
+              <textarea class="info-comment__text" id="content" name="content" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
           </fieldset>
           <div class="page-form__container">
             <button class="page-form__button" type="submit"><span class="page-form__button-text">Отправить отзыв</span></button>
@@ -186,7 +188,7 @@
       <p class="success__header">Ваш отзыв отправлен!</p>
       <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="success__container">
-        <button class="success__button" type="button"><span class="success__button--text">Закрыть окно</span></button>
+        <button class="success__button" type="button"><span class="success__button-text">Закрыть окно</span></button>
       </div>
     </div>
     <!--modal success end-->
