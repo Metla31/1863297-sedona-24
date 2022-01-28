@@ -1,9 +1,11 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  width: 156px;
 }
 
 .social__link {
@@ -38,10 +40,6 @@
 
 .social__link:active {
   background-color: @active_button;
-}
-
-.social__link:last-child {
-  margin-right: 0;
 }
 
 .social__link--twitter::before {
