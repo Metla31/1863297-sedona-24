@@ -81,11 +81,11 @@
   display: block;
   width: 255px;
   margin: 0 auto;
-  margin-top: 17px;
+  margin-top: 18px;
   font-weight: normal;
   min-height: 55px;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 26px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -107,6 +107,10 @@
 
   .intro__header::before {
     bottom: 11px;
+
+    @media (min-resolution: 2dppx) {
+      bottom: 0;
+    }
   }
 
   .intro__header-img {
@@ -128,6 +132,7 @@
     width: 455px;
     min-height: 81px;
     font-size: 21px;
+    line-height: 26px;
   }
 
   .intro__info-text {
@@ -135,11 +140,7 @@
     width: 485px;
     margin: 0 auto;
     font-weight: normal;
-    min-height: 55px;
-    font-size: 14px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
+    line-height: 26px;
   }
 }
 
