@@ -30,10 +30,10 @@
 
 .main-nav__list a {
   display: block;
-  padding: 18px 0;
-  padding-bottom: 13px;
+  padding: 7px 0;
+  padding-bottom: 7px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -66,7 +66,9 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;
+    align-items: center;
     background-color: @white;
+    height: 100%;
   }
 
   .main-nav--opened {
@@ -91,6 +93,7 @@
     margin: 0;
     padding: 0;
     background-color: @white;
+    height: 100%;
   }
 
   .main-nav__list a {
@@ -98,8 +101,9 @@
     border: 0;
     background-color: @white;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 26px;
     width: 153px;
+    height: 100%;
   }
 
   .main-nav__list a:hover {
