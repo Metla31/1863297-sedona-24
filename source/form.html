@@ -21,7 +21,7 @@
         <button class="page-header__toggle page-header__toggle--opened" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--opened">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="./index.html">
@@ -85,7 +85,7 @@
           <fieldset class="form__info-contacts info-contacts">
             <p class="info-contacts__header">Контактная информация:</p>
             <label class="info-contacts__label" for="tel-number">
-              <span class="info-contacts__notification info-contacts__notification-text"><span class="info-contacts__notification-text--span">Контактный</span> телефон*:</span>
+              <span class="info-contacts__notification info-contacts__notification-text"><span class="info-contacts__notification-text info-contacts__notification-text--span">Контактный</span> телефон*:</span>
               <span class="info-contacts__container">
                 <input class="info-contacts__input" type="tel" maxlength="15" id="tel-number" name="Номер телефона" placeholder="Введите телефон" required>
                 <span class="info-contacts__tel-ico"></span>
@@ -142,9 +142,8 @@
           </fieldset>
           <fieldset class="form__info-comment info-comment">
             <p class="info-comment__header">Опишите свои эмоции:</p>
-            <label for="" class="info-comment__label">
-              <textarea class="info-comment__text" id="content" name="content" placeholder="Опишите подробно все свои восторги"></textarea>
-            </label>
+            <label for="content" class="visually-hidden">Опишите подробно все свои восторги</label>
+            <textarea class="info-comment__text" id="content" name="content" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="page-form__container">
             <button class="page-form__button" type="submit"><span class="page-form__button-text">Отправить отзыв</span></button>
