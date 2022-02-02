@@ -6,6 +6,10 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="shortcut icon" href="./img/fav-ico.jpg" type="image/x-icon">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/ptsans.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin>
   <body class="page__body body">
     <div class="body__wrapper">
     <!--header start-->
@@ -67,7 +71,7 @@
           </p>
         </div>
         <form action="https://echo.htmlacademy.ru" class="page-form form">
-          <fieldset class="form__info-name info-name">
+          <div class="form__info-name info-name">
             <p class="info-name__header">Представьтесь:</p>
             <label class="info-name__label" for="name">
               <span class="info-name__label-text info-name__label-text--name">Имя*:</span>
@@ -81,8 +85,8 @@
               <span class="info-name__label-text info-name__label-text--patronymic">Отчество:</span>
               <input class="info-name__input info-name__input--patronymic" type="text" id="patronymic" name="Отчество" placeholder="Александрович">
             </label>
-          </fieldset>
-          <fieldset class="form__info-contacts info-contacts">
+          </div>
+          <div class="form__info-contacts info-contacts">
             <p class="info-contacts__header">Контактная информация:</p>
             <label class="info-contacts__label" for="tel-number">
               <span class="info-contacts__notification info-contacts__notification-text"><span class="info-contacts__notification-text info-contacts__notification-text--span">Контактный</span> телефон*:</span>
@@ -98,8 +102,8 @@
                 <span class="info-contacts__email-ico"></span>
               </span>
             </label>
-          </fieldset>
-          <fieldset class="form__info-impression info-impression">
+          </div>
+          <div class="form__info-impression info-impression">
             <p class="info-impression__header">Ваше общее впечатление:</p>
             <label class="info-impression__label" for="positively">
               <input class="info-impression__input visually-hidden" type="radio" id="positively" name="impression" value="Положительно" checked>
@@ -116,8 +120,8 @@
               <span class="info-impression__radio"></span>
               <span class="info-impression__text">Затрудняюсь ответить</span>
             </label>
-          </fieldset>
-          <fieldset class="form__info-places info-places">
+          </div>
+          <div class="form__info-places info-places">
             <p class="info-places__header">Посещенные достопримечательности:</p>
             <label class="info-places__label info-places__label--bridge" for="bridge">
               <input class="info-places__input visually-hidden" type="checkbox" id="bridge" name="bridge" value="Мост дьявола" checked>
@@ -139,12 +143,12 @@
               <span class="info-places__checkbox info-places__checkbox--red-rocks"></span>
               <span class="info-places__text">Красные скалы</span>
             </label>
-          </fieldset>
-          <fieldset class="form__info-comment info-comment">
+          </div>
+          <div class="form__info-comment info-comment">
             <p class="info-comment__header">Опишите свои эмоции:</p>
             <label for="content" class="visually-hidden">Опишите подробно все свои восторги</label>
             <textarea class="info-comment__text" id="content" name="content" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
+          </div>
           <div class="page-form__container">
             <button class="page-form__button" type="submit"><span class="page-form__button-text">Отправить отзыв</span></button>
             <p class="page-form__notification">* — обязательные поля</p>

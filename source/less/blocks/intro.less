@@ -16,12 +16,14 @@
   background-image: url("../img/background-intro-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% 1px;
+  background-color: @blue;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background-intro-mobile@2x.png");
     background-repeat: no-repeat;
     background-position: 50% -5px;
     background-size: 900px 400px;
+    background-color: @blue;
   }
 }
 
@@ -92,7 +94,7 @@
 
 @media (min-width: @tablet-width) {
   .intro__header {
-    height: 530px;
+    height: 518px;
     margin: 0 auto;
     padding: 0;
     background-image: url("../img/background-intro.jpg");
@@ -105,14 +107,6 @@
     }
   }
 
-  .intro__header::before {
-    bottom: 11px;
-
-    @media (min-resolution: 2dppx) {
-      bottom: 10px;
-    }
-  }
-
   .intro__header-img {
     width: 460px;
     height: 350px;
@@ -122,6 +116,7 @@
 
   .intro__info {
     min-height: 195px;
+    margin-bottom: 12px;
   }
 
   .intro__info::before {
@@ -133,11 +128,12 @@
     min-height: 81px;
     font-size: 21px;
     line-height: 26px;
+    margin-top: 44px;
   }
 
   .intro__info-text {
     display: block;
-    width: 485px;
+    width: 490px;
     margin: 0 auto;
     font-weight: normal;
     line-height: 26px;
@@ -157,6 +153,10 @@
       background-image: url("../img/background-intro@2x.jpg");
       background-size: 100%;
     }
+  }
+
+  .intro__info {
+    margin-bottom: 0;
   }
 
   .intro__header::before {
